@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { AnnouncementBar, GuideBottomSheet } from "@/components/guide-promo";
 
 export const metadata: Metadata = {
   title: "Yugo Le Ouedec \u2014 Expert Capillaire & Cr\u00e9ateur de Contenu",
@@ -29,7 +30,9 @@ export default function RootLayout({
           "font-sans",
         )}
       >
+        <AnnouncementBar />
         {children}
+        <GuideBottomSheet />
       </body>
     </html>
   );

@@ -411,7 +411,7 @@ export default function LandingPage() {
                   'HairScan 1 fois',
                 ],
                 buttonText: 'Commencer Maintenant',
-                buttonHref: '/hairscan',
+                buttonHref: '/reservation',
                 buttonVariant: 'secondary',
               },
               {
