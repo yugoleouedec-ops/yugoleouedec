@@ -554,7 +554,7 @@ export default function LandingPage() {
                 className="group relative aspect-[5/4] overflow-hidden rounded-3xl bg-[#1A1A1A]"
               >
                 <img
-                  src="/images/CTA/cta-hairscan.png"
+                  src="/images/cta/cta-hairscan.png"
                   alt="HairScan"
                   className="absolute inset-0 h-full w-full object-cover opacity-60 transition-transform duration-500 group-hover:scale-105"
                 />
@@ -579,7 +579,7 @@ export default function LandingPage() {
                 className="group relative aspect-[5/4] overflow-hidden rounded-3xl bg-[#1A1A1A]"
               >
                 <img
-                  src="/images/CTA/cta-guide.png"
+                  src="/images/cta/cta-guide.png"
                   alt="Guide Gratuit"
                   className="absolute inset-0 h-full w-full object-cover opacity-60 transition-transform duration-500 group-hover:scale-105"
                 />

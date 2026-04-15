@@ -90,7 +90,7 @@ export function LocationMap({
             >
               {/* Map image background */}
               <img
-                src="/images/map.PNG"
+                src="/images/map.png"
                 alt="Carte Île-de-France"
                 className="absolute inset-0 w-full h-full object-cover"
               />
