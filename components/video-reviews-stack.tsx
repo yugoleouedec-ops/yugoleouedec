@@ -12,9 +12,6 @@ interface Review {
   title: string;
 }
 
-// TODO: Ajouter vidéos dans public/videos/
-// Format : avis-1.mov, avis-2.mov, etc.
-// Résolution : 1080x1920 (vertical)
 const reviews: Review[] = [
   { id: 1, videoUrl: '/videos/avis-1.mov', clientName: 'Louis C.', subtitle: 'Client depuis 6 mois', title: '"C\'est ma meilleure d\u00e9cision"' },
   { id: 2, videoUrl: '/videos/avis-2.mov', clientName: 'Leo A.', subtitle: 'Client depuis 2 ans', title: '"Pas seulement une coupe"' },
@@ -22,7 +19,7 @@ const reviews: Review[] = [
   { id: 4, videoUrl: '/videos/avis-4.mov', clientName: 'Alexandre M.', subtitle: 'Client depuis 1 an', title: '"Un vrai changement"' },
 ];
 
-const SWIPE_THRESHOLD = 50;
+const SWIPE_THRESHOLD = 40;
 const ROTATIONS = [0, -3, 3, 2];
 
 export function VideoReviewsStack() {
@@ -48,7 +45,7 @@ export function VideoReviewsStack() {
       <div className="relative h-[600px] w-full max-md:h-[70vh] max-md:max-h-[600px]">
         {getVisibleCards().map(({ review, stackIndex }) => (
           <VideoCard
-            key={`${review.id}-${currentIndex}`}
+            key={review.id}
             review={review}
             stackIndex={stackIndex}
             onSwipe={handleSwipe}
@@ -111,10 +108,11 @@ function VideoCard({
   onToggleMute: () => void;
 }) {
   const x = useMotionValue(0);
-  const rotate = useTransform(x, [-200, 200], [-15, 15]);
-  const opacity = useTransform(x, [-200, -100, 0, 100, 200], [0.5, 1, 1, 1, 0.5]);
+  const rotate = useTransform(x, [-200, 200], [-12, 12]);
+  const cardOpacity = useTransform(x, [-200, -100, 0, 100, 200], [0.6, 1, 1, 1, 0.6]);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [videoError, setVideoError] = useState(false);
+  const swiping = useRef(false);
 
   const isTop = stackIndex === 0;
   const zIndex = 30 - stackIndex * 10;
@@ -139,17 +137,22 @@ function VideoCard({
   }, [isMuted]);
 
   const handleDragEnd = (_: unknown, info: { offset: { x: number }; velocity: { x: number } }) => {
-    if (Math.abs(info.offset.x) > SWIPE_THRESHOLD || Math.abs(info.velocity.x) > 500) {
+    if (swiping.current) return;
+
+    if (Math.abs(info.offset.x) > SWIPE_THRESHOLD || Math.abs(info.velocity.x) > 400) {
+      swiping.current = true;
       const direction = info.offset.x > 0 ? 1 : -1;
-      animate(x, direction * 500, {
-        duration: 0.3,
-        ease: 'easeOut',
+      animate(x, direction * 400, {
+        duration: 0.2,
+        ease: [0.32, 0.72, 0, 1],
         onComplete: () => {
           onSwipe();
+          x.set(0);
+          swiping.current = false;
         },
       });
     } else {
-      animate(x, 0, { duration: 0.3, type: 'spring', stiffness: 300, damping: 20 });
+      animate(x, 0, { type: 'spring', stiffness: 500, damping: 30 });
     }
   };
 
@@ -157,18 +160,20 @@ function VideoCard({
     <motion.div
       drag={isTop ? 'x' : false}
       dragConstraints={{ left: 0, right: 0 }}
-      dragElastic={0.7}
+      dragElastic={0.5}
+      dragMomentum={false}
       onDragEnd={isTop ? handleDragEnd : undefined}
       style={{
         x: isTop ? x : 0,
         rotate: isTop ? rotate : rotation,
         scale,
         zIndex,
-        opacity: isTop ? opacity : 1,
+        opacity: isTop ? cardOpacity : 1,
+        touchAction: isTop ? 'pan-y' : 'auto',
+        willChange: isTop ? 'transform' : 'auto',
       }}
-      initial={{ y: yOffset + 20, rotate: rotation, scale: scale - 0.05, opacity: 0.8 }}
-      animate={{ y: yOffset, rotate: rotation, scale, opacity: 1 }}
-      transition={{ duration: 0.3, ease: 'easeOut' }}
+      animate={{ y: yOffset, rotate: isTop ? undefined : rotation, scale }}
+      transition={{ duration: 0.25, ease: [0.32, 0.72, 0, 1] }}
       className="absolute left-0 top-0 h-full w-full cursor-grab active:cursor-grabbing"
     >
       <div
