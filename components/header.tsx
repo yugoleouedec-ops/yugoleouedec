@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion, AnimatePresence, useMotionValueEvent, useScroll } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { ShinyButton } from "@/components/ui/shiny-button";
+import { AnnouncementBar } from "@/components/guide-promo";
 
 function MenuToggle({ open, onClick }: { open: boolean; onClick: () => void }) {
   return (
@@ -62,6 +63,7 @@ export function Header() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
+      <AnnouncementBar />
       <nav className="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-5 md:px-10 lg:h-20">
         {/* Logo signature */}
         <Link
@@ -108,7 +110,7 @@ export function Header() {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            className="fixed inset-0 top-16 z-40 flex flex-col bg-[#1A1A1A] md:hidden"
+            className="fixed inset-0 top-[calc(theme(spacing.16)+36px)] z-40 flex flex-col bg-[#1A1A1A] md:hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

@@ -52,7 +52,7 @@ function CountdownTimer() {
 /* ─── Announcement Bar ─── */
 export function AnnouncementBar() {
   return (
-    <div className="sticky top-0 z-50 w-full bg-[#1A1A1A] text-white">
+    <div className="w-full bg-[#1A1A1A] text-white">
       <div className="flex items-center justify-center gap-2 px-4 py-2 text-xs sm:text-sm">
         <span className="shrink-0">⏳</span>
         <span className="truncate font-medium">
