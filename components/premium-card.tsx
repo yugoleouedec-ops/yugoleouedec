@@ -117,8 +117,9 @@ export function PremiumCard() {
       </motion.div>
 
       {/* CTA Button */}
-      <motion.button
-        className="mx-auto mt-6 block rounded-full bg-[#EA580C] px-7 py-3 text-white transition-transform hover:scale-105 sm:px-8 sm:py-3.5"
+      <motion.a
+        href="/reservation"
+        className="mx-auto mt-6 block rounded-full bg-[#EA580C] px-7 py-3 text-white text-center transition-transform hover:scale-105 sm:px-8 sm:py-3.5"
         variants={staggerItem}
         initial="hidden"
         animate={isInView ? 'visible' : 'hidden'}
@@ -129,7 +130,7 @@ export function PremiumCard() {
           <span className="ml-2 line-through opacity-70">&euro;30</span>
           <span className="ml-1 font-bold" style={{ textShadow: '0 0 8px rgba(255,255,255,0.6), 0 0 16px rgba(255,255,255,0.3)' }}>&euro;20</span>
         </span>
-      </motion.button>
+      </motion.a>
 
       {/* Separator */}
       <motion.div
