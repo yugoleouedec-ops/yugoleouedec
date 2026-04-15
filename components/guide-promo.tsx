@@ -54,9 +54,9 @@ export function AnnouncementBar() {
   return (
     <div className="w-full bg-[#1A1A1A] text-white">
       <div className="flex items-center justify-center gap-2 px-4 py-2 text-xs sm:text-sm">
-        <span className="shrink-0">⏳</span>
+        <span className="shrink-0">🎁</span>
         <span className="truncate font-medium">
-          Guide cheveux fins <span className="font-bold">GRATUIT</span> — plus que {DEADLINE_DAYS} jours
+          Guide <span className="font-bold">GRATUIT</span> — expire dans {DEADLINE_DAYS}j
         </span>
         <a
           href={GUIDE_URL}
