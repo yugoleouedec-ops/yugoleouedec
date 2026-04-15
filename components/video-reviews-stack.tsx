@@ -19,7 +19,7 @@ const reviews: Review[] = [
   { id: 1, videoUrl: '/videos/avis-1.mov', clientName: 'Louis C.', subtitle: 'Client depuis 6 mois', title: '"C\'est ma meilleure d\u00e9cision"' },
   { id: 2, videoUrl: '/videos/avis-2.mov', clientName: 'Leo A.', subtitle: 'Client depuis 2 ans', title: '"Pas seulement une coupe"' },
   { id: 3, videoUrl: '/videos/avis-3.mov', clientName: 'Matteo D.', subtitle: 'Chang\u00e9 d\u00e8s le premier RDV', title: '"Il prend le temps..."' },
-  { id: 4, videoUrl: '/videos/avis-4.mov', clientName: 'Hugo R.', subtitle: 'Client depuis 1 an', title: '"Un vrai changement"' },
+  { id: 4, videoUrl: '/videos/avis-4.mov', clientName: 'Alexandre M.', subtitle: 'Client depuis 1 an', title: '"Un vrai changement"' },
 ];
 
 const SWIPE_THRESHOLD = 50;
