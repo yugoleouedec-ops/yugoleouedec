@@ -498,7 +498,7 @@ export default function LandingPage() {
                 { id: 1, name: 'Thomas', avatar: '/images/avis/image00002.jpeg', description: '...' },
                 { id: 2, name: 'Youri', avatar: '/images/avis/image00003.jpeg', description: '...' },
                 { id: 3, name: 'Mathias', avatar: '/images/avis/image00006.jpeg', description: '...' },
-                { id: 4, name: 'Neo', avatar: '/images/avis/image00007.jpeg', description: '...' },
+                { id: 4, name: 'Alexandre.M', avatar: '/images/avis/image00007.jpeg', description: '...' },
                 { id: 5, name: 'Sanson', avatar: '/images/avis/image00008.jpeg', description: '...' },
                 { id: 6, name: 'Romain', avatar: '/images/avis/image00009.jpeg', description: '...' },
                 { id: 7, name: 'Théo', avatar: '/images/avis/image00010.jpeg', description: '...' },
