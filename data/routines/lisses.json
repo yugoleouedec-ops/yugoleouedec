@@ -1,0 +1,62 @@
+{
+  "type": "lisses",
+  "frequenceLavage": "1-3x par semaine",
+
+  "conseils": [
+    "Utilise un shampooing doux sans SULFATES, c'est ton énemie numéro 1",
+    "C'est tentant mais n'utilise pas trop de chaleur forte, (ex: lisseur à 200 degrés, ils seront encore plus raides.)",
+    "Eviter de trop peigner ou brosser tes cheveux, ca les rends plats."
+  ],
+
+  "gestes": [
+    "Évite de frotter avec la serviette, tamponne, Scrunch",
+    "Diffuseur à basse température pour sécher tes cheveux (4 secondes chaud, 3 froids + Mouvements circulaires), C'est le Cheat code pour des cheveux lisses."
+  ],
+
+  "astuces": [
+    "Un rinçage à l'eau froide en fin de douche referme les cuticules et donne de résistance."
+  ],
+
+  "variantes": {
+    "secs": {
+      "conseilsSupp": [
+        "Utilise des produits volumisants (shampoing léger + spray texturisant)"
+      ],
+      "astucesSupp": [
+        "Sèche les cheveux tête en bas + souffle froid à la fin pour plus de volume"
+      ]
+    },
+    "gras": {
+      "conseilsSupp": [
+        "Utilise des produits légers et évite les ingrédients lourds qui peuvent alourdir tes cheveux lisses."
+      ],
+      "astucesSupp": [
+        "Fais un test de tolérance sur ton cuir chevelu avant d'utiliser de nouveaux produits, surtout si tu as des cheveux gras."
+      ]
+    },
+    "pellicules": {
+      "conseilsSupp": [
+        "Utilise un shampooing antipelliculaire (pH5.5) et pense à hydrater le cuir chevelu (pas seulement les longueurs)"
+      ],
+      "astucesSupp": [
+        "Fait vraiment attention à ne pas appliquer les produits coiffants sur le cuir chevelu, ca peut aggraver les pellicules, concentre-toi sur les longueurs et les pointes"
+      ]
+    },
+    "chute": {
+      "conseilsSupp": [
+        "Utilise des produits doux mais stimulants pour favoriser la croissance des cheveux."
+      ],
+      "astucesSupp": [
+        "Applique des masques nourrissants ou de l'huile de ricin sur les longueurs et les pointes, mais évite le cuir chevelu pour ne pas aggraver la chute."
+      ]
+    },
+    "volume": {
+      "conseilsSupp": [
+        "Utilise des produits volumisants (shampoing léger + spray texturisant)"
+      ],
+      "astucesSupp": [
+        "Sèche les cheveux tête en bas + souffle froid à la fin pour plus de volume"
+      ]
+    }
+  }
+}

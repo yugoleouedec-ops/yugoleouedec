@@ -1,0 +1,63 @@
+{
+  "type": "crepus",
+  "frequenceLavage": "1-2x par semaine",
+
+  "conseils": [
+    "Hydrate quotidiennement avec un spray eau + huile",
+    "Fais un masque hydratant, si tu sens que tes cheveux sont secs.",
+    "Utilise la méthode LOC (Liquid, Oil, Cream) pour une hydratation optimale"
+  ],
+
+  "gestes": [
+    "Dors avec un bonnet en satin ou une taie en satin (Obligatoire :)) ",
+    "Démêle toujours avec un après-shampooing et un peigne à dents larges",
+    "Protège tes cheveux avec des coiffures protectrices (ex: tresses, vanilles)."
+  ],
+
+  "astuces": [
+    "Si tes cheveux crépus ne sont pas hydratés, rien ne marche — hydrate d'abord, coiffe ensuite."
+  ],
+
+  "variantes": {
+    "secs": {
+      "conseilsSupp": [
+        "Hydrate régulièrement (eau + leave-in), ca parait logique mais faut le faire."
+      ],
+      "astucesSupp": [
+        "Applique sur cheveux légèrement humides puis laisse sécher à l'air libre ou utilise un diffuseur à basse température pour éviter les frisottis."
+      ]
+    },
+    "gras": {
+      "conseilsSupp": [
+        "Utilise des produits légers et évite les ingrédients lourds qui peuvent alourdir tes cheveux crépus."
+      ],
+      "astucesSupp": [
+        "Fais un test de tolérance sur ton cuir chevelu avant d'utiliser de nouveaux produits, surtout si tu as des cheveux gras."
+      ]
+    },
+    "pellicules": {
+      "conseilsSupp": [
+        "Utilise un shampooing antipelliculaire (pH5.5) et pense à hydrater le cuir chevelu (pas seulement les longueurs)"
+      ],
+      "astucesSupp": [
+        "Fait vraiment attention à ne pas appliquer les produits coiffants sur le cuir chevelu, ca peut aggraver les pellicules, concentre-toi sur les longueurs et les pointes"
+      ]
+    },
+    "chute": {
+      "conseilsSupp": [
+        "Utilise des produits doux mais stimulants pour favoriser la croissance des cheveux."
+      ],
+      "astucesSupp": [
+        "Applique des masques nourrissants ou de l'huile de ricin sur les longueurs et les pointes, mais évite le cuir chevelu pour ne pas aggraver la chute."
+      ]
+    },
+    "volume": {
+      "conseilsSupp": [
+        "Utilise une mousse volumisante et applique-la sur cheveux humides, puis coiffe à l'aide d'un diffuseur (meilleur outil du monde ) ou en laissant sécher naturellement."
+      ],
+      "astucesSupp": [
+        "Fait attention à ne pas trop mettre de chaleur, soit doux et opte pour des techniques douces comme le plopping ou le curling avec un diffuseur."
+      ]
+    }
+  }
+}

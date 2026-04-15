@@ -1,0 +1,63 @@
+{
+  "type": "boucles",
+  "frequenceLavage": "1-2x par semaine",
+
+  "conseils": [
+    "Applique tes produits sur cheveux mouillés pour mieux définir les boucles",
+    "Utilise la méthode LOC (Liquid, Oil, Cream) pour hydrater",
+    "Définis tes boucles avec un gel ou une crème coiffante, c'est la clé pour éviter les frisottis"
+  ],
+
+  "gestes": [
+    "Ne touche pas tes boucles pendant le séchage !",
+    "Utilise une serviette en microfibre ou un t-shirt pour sécher tes cheveux, c'est plus doux que les serviettes classiques",
+    "Rafraîchis tes boucles le matin avec un spray d'eau, mais très léger sur la dose"
+  ],
+
+  "astuces": [
+    "Evite les produits contenant de l'alcool, ils assèchent les boucles, le but c'est d'avoir la meilleur définition possible"
+  ],
+
+  "variantes": {
+    "secs": {
+      "conseilsSupp": [
+        "T'a les cheveux bouclés et secs ? Privilégie les masques hydratants riches en huiles naturelles comme l'huile d'argan ou de coco pour nourrir en profondeur"
+      ],
+      "astucesSupp": [
+        "Avec ca, appliquer le produit sur cheveux trempés + technique “scrunch + laisser sécher sans toucher, "
+      ]
+    },
+    "gras": {
+      "conseilsSupp": [
+        "T'a les cheveux bouclés et gras ? Opte pour des shampoings doux sans sulfates et évite les produits trop riches, ca peut juste graisser encore plus tes racines"
+      ],
+      "astucesSupp": [
+        "Fait attention à la dose de tes produits coiffants, trop de crème ou de gel peut alourdir tes boucles et les rendre plus grasses, privilégie les formules légères"
+      ]
+    },
+    "pellicules": {
+      "conseilsSupp": [
+        "T'a les cheveux bouclés et avec des pellicules ? Utilise un shampooing antipelliculaire (pH5.5) et pense à hydrater le cuir chevelu (pas seulement les longueurs)"
+      ],
+      "astucesSupp": [
+        "Fait vraiment attention à ne pas appliquer les produits coiffants sur le cuir chevelu, ca peut aggraver les pellicules, concentre-toi sur les longueurs et les pointes"
+      ]
+    },
+    "chute": {
+      "conseilsSupp": [
+        "T'a les cheveux bouclés et en chute ? Privilégie les produits doux mais stimulants. "
+      ],
+      "astucesSupp": [
+        "Pour réduire les effets tu peux aussi appliquer des masques nourrissants ou meme de l'huile de ricin (ca peut augmenter légerment la croissance des cheveux) sur les longueurs et les pointes, mais évite le cuir chevelu pour pas aggraver la chute."
+      ]
+    },
+    "volume": {
+      "conseilsSupp": [
+        "T'a les cheveux bouclés et besoin de volume ? Utilise une mousse volumisante et applique-la sur cheveux humides, puis coiffe à l'aide d'un diffuseur ( meilleur outil du monde ) ou en laissant sécher naturellement."
+      ],
+      "astucesSupp": [
+        "Fait attention à ne pas trop mettre de chaleur, soit doux et opte pour des techniques douces comme le plopping ou le curling avec un diffuseur."
+      ]
+    }
+  }
+}

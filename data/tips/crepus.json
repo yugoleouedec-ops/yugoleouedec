@@ -1,0 +1,32 @@
+[
+  {
+    "problemes": ["secs"],
+    "objectifs": ["definition"],
+    "astuce": "AJOUTE ICI : ton astuce d'expert pour crépus + secs + définition"
+  },
+  {
+    "problemes": ["secs"],
+    "objectifs": ["fortifier"],
+    "astuce": "AJOUTE ICI : ton astuce d'expert pour crépus + secs + fortifier"
+  },
+  {
+    "problemes": ["gras"],
+    "objectifs": ["entretien"],
+    "astuce": "AJOUTE ICI : ton astuce d'expert pour crépus + gras"
+  },
+  {
+    "problemes": ["pellicules"],
+    "objectifs": ["entretien"],
+    "astuce": "AJOUTE ICI : ton astuce d'expert pour crépus + pellicules"
+  },
+  {
+    "problemes": ["chute"],
+    "objectifs": ["fortifier"],
+    "astuce": "AJOUTE ICI : ton astuce d'expert pour crépus + chute"
+  },
+  {
+    "problemes": ["volume"],
+    "objectifs": ["definition"],
+    "astuce": "AJOUTE ICI : ton astuce d'expert pour crépus + volume"
+  }
+]

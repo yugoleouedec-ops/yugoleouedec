@@ -1,0 +1,27 @@
+[
+  {
+    "problemes": ["secs"],
+    "objectifs": ["brillance"],
+    "astuce": "AJOUTE ICI : ton astuce d'expert pour semi-lisses + secs"
+  },
+  {
+    "problemes": ["gras"],
+    "objectifs": ["entretien"],
+    "astuce": "AJOUTE ICI : ton astuce d'expert pour semi-lisses + gras"
+  },
+  {
+    "problemes": ["pellicules"],
+    "objectifs": ["entretien"],
+    "astuce": "AJOUTE ICI : ton astuce d'expert pour semi-lisses + pellicules"
+  },
+  {
+    "problemes": ["chute"],
+    "objectifs": ["fortifier"],
+    "astuce": "AJOUTE ICI : ton astuce d'expert pour semi-lisses + chute"
+  },
+  {
+    "problemes": ["volume"],
+    "objectifs": ["definition"],
+    "astuce": "AJOUTE ICI : ton astuce d'expert pour semi-lisses + volume"
+  }
+]

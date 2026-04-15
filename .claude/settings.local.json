@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx next:*)",
+      "Bash(cd:*)",
+      "Bash(node -e \"const l = require\\(''lucide-react''\\); console.log\\(Object.keys\\(l\\).filter\\(k => /nstagram|outube|end/i.test\\(k\\)\\).join\\(''\\\\n''\\)\\)\")",
+      "Bash(node -e \"const l = require\\(''lucide-react''\\); console.log\\(Object.keys\\(l\\).filter\\(k => /^\\(Instagram|Youtube|Globe|Link|ExternalLink|Mail|Share\\)/i.test\\(k\\)\\).join\\(''\\\\n''\\)\\)\")",
+      "Bash(node -e \"const p = require\\(''./package.json''\\); console.log\\(Object.keys\\(p.dependencies\\).filter\\(k => /motion|framer/i.test\\(k\\)\\).join\\('', ''\\)\\)\")",
+      "Bash(find /c/Users/yugol/OneDrive/Desktop/dev/hairscan/app -type f \\\\\\(-name *.tsx -o -name *.ts -o -name *.jsx -o -name *.js \\\\\\))",
+      "Bash(find /c/Users/yugol/OneDrive/Desktop/dev/hairscan/components -type f \\\\\\(-name *.tsx -o -name *.ts \\\\\\))",
+      "Bash(find /c/Users/yugol/OneDrive/Desktop/dev/hairscan -type f \\\\\\(-name *.css -o -name *.module.css \\\\\\))",
+      "Bash(find /c/Users/yugol/OneDrive/Desktop/dev/hairscan -path *node_modules -prune -o -path *.next -prune -o -type f \\\\\\(-name *.tsx -o -name *.ts \\\\\\) -print)",
+      "Bash(node -e \"const p=require\\(''./package.json''\\); console.log\\(Object.keys\\(p.dependencies||{}\\).join\\(''\\\\n''\\)\\)\")",
+      "Bash(node -e \"try{require.resolve\\(''@radix-ui/react-slot''\\);console.log\\(''OK''\\)}catch\\(e\\){console.log\\(''MISSING''\\)}\")",
+      "Bash(ls:*)",
+      "Bash(sed:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm ls:*)",
+      "Bash(npm install:*)",
+      "Bash(node:*)",
+      "Bash(xxd -l 100 \"C:\\\\Users\\\\yugol\\\\OneDrive\\\\Desktop\\\\dev\\\\hairscan\\\\components\\\\video-reviews-stack.tsx\")",
+      "Bash(git remote *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}

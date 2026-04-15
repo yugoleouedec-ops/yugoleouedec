@@ -1,0 +1,32 @@
+[
+  {
+    "problemes": ["secs"],
+    "objectifs": ["definition"],
+    "astuce": "AJOUTE ICI : ton astuce d'expert pour bouclés + secs + définition"
+  },
+  {
+    "problemes": ["secs"],
+    "objectifs": ["brillance"],
+    "astuce": "AJOUTE ICI : ton astuce d'expert pour bouclés + secs + brillance"
+  },
+  {
+    "problemes": ["gras"],
+    "objectifs": ["entretien"],
+    "astuce": "AJOUTE ICI : ton astuce d'expert pour bouclés + gras"
+  },
+  {
+    "problemes": ["pellicules"],
+    "objectifs": ["entretien"],
+    "astuce": "AJOUTE ICI : ton astuce d'expert pour bouclés + pellicules"
+  },
+  {
+    "problemes": ["chute"],
+    "objectifs": ["fortifier"],
+    "astuce": "AJOUTE ICI : ton astuce d'expert pour bouclés + chute"
+  },
+  {
+    "problemes": ["volume"],
+    "objectifs": ["definition"],
+    "astuce": "AJOUTE ICI : ton astuce d'expert pour bouclés + volume"
+  }
+]
