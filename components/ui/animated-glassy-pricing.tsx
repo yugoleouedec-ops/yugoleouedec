@@ -118,14 +118,14 @@ export const PricingCard = ({
         <h2 className="text-[2rem] font-extrabold tracking-[-0.02em] text-[#1A1A1A]">{planName}</h2>
         <p className="text-[14px] text-[#404040]/70 mt-1 font-sans">{description}</p>
       </div>
-      <div className="my-6 flex items-baseline gap-2 flex-wrap">
-        <span className="text-[2.5rem] font-normal text-[#1A1A1A]">{price}</span>
+      <div className="my-6">
         {discountPrice && (
-          <>
-            <span className="text-[1.1rem] text-[#404040]/50 line-through">{discountPrice}</span>
-            {discountLabel && <span className="text-[0.8rem] font-semibold"><span className="text-[#404040]/50">avec </span><span className="text-[#EA580C]">Yugo Access</span></span>}
-          </>
+          <span className="block text-[1.25rem] text-[#404040]/50 line-through leading-none mb-1">{discountPrice}</span>
         )}
+        <div className="flex items-baseline gap-2 flex-wrap">
+          <span className="text-[2.5rem] font-normal text-[#1A1A1A]">{price}</span>
+          {discountLabel && <span className="text-[0.9rem] font-semibold"><span className="text-[#404040]/50">avec </span><span className="text-[#EA580C]">Yugo Access</span></span>}
+        </div>
       </div>
       <div className="w-full mb-5 h-px bg-[linear-gradient(90deg,transparent,rgba(0,0,0,0.1)_50%,transparent)]" />
       {featureSections ? (

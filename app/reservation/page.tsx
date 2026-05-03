@@ -10,7 +10,6 @@ import { BeforeAfterSlider } from "@/components/ui/before-after-slider";
 import { TestimonialCarousel } from "@/components/ui/testimonial";
 import { HandWrittenTitle } from "@/components/ui/hand-writing-text";
 import ScrollFAQAccordion from "@/components/ui/scroll-faqaccordion";
-import { CircledText } from "@/components/circled-text";
 import { PricingCard } from "@/components/ui/animated-glassy-pricing";
 
 export default function ReservationPage() {
@@ -30,14 +29,9 @@ export default function ReservationPage() {
     <>
       <Header />
       <main id="top" className="min-h-dvh pt-20 bg-[#F5F1E8] scroll-smooth">
-        <div className="py-12 text-center">
-          <h1 className="text-[2.6rem] font-extrabold tracking-[0.02em] sm:text-[3.25rem] lg:text-[3.9rem]">
-            Bient&ocirc;t &agrave; <CircledText>ton tour</CircledText> !!!
-          </h1>
-        </div>
         <div
           className="calendly-inline-widget w-full"
-          data-url="https://calendly.com/yugoleouedec/prise-de-rendez-vous"
+          data-url="https://calendly.com/yugoleouedec/prise-de-rendez-vous?background_color=F5F1E8&text_color=1A1A1A&primary_color=CF5F23&hide_gdpr_banner=1"
           style={{ minWidth: "320px", height: "700px" }}
         />
 
@@ -58,8 +52,8 @@ export default function ReservationPage() {
               <PricingCard
                 planName="Consultation"
                 description="45 min"
-                price="20&euro;"
-                discountPrice="15,00€"
+                price="15&euro;"
+                discountPrice="20&euro;"
                 discountLabel="avec Yugo Access"
                 features={[
                   'Analyse de ton visage',
@@ -67,9 +61,9 @@ export default function ReservationPage() {
                   'Conseils Produits',
                   'Conseils Routines :)',
                 ]}
-                buttonText="R&eacute;server"
-                buttonHref="#top"
+                buttonText="Bient&ocirc;t disponible"
                 buttonVariant="primary"
+                buttonDisabled
               />
             </div>
 

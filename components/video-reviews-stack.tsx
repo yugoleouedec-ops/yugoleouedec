@@ -132,9 +132,9 @@ function VideoCard({
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.muted = isMuted;
+      videoRef.current.muted = isTop ? isMuted : true;
     }
-  }, [isMuted]);
+  }, [isMuted, isTop]);
 
   const handleDragEnd = (_: unknown, info: { offset: { x: number }; velocity: { x: number } }) => {
     if (swiping.current) return;
@@ -192,11 +192,17 @@ function VideoCard({
             ref={videoRef}
             src={review.videoUrl}
             className="h-full w-full object-cover"
-            autoPlay={isTop}
+            autoPlay
             loop
-            muted={isMuted}
+            muted={isTop ? isMuted : true}
             playsInline
-            preload={isTop ? 'auto' : 'metadata'}
+            preload="auto"
+            onLoadedData={() => {
+              if (!isTop && videoRef.current) {
+                videoRef.current.pause();
+                videoRef.current.currentTime = 0;
+              }
+            }}
             onError={() => setVideoError(true)}
           />
         )}
