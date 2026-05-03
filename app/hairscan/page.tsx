@@ -1,9 +1,12 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { Header } from "@/components/header";
 import Hero from "@/components/ui/animated-shader-hero";
 
 export default function HairScanWelcome() {
+  const router = useRouter();
+
   return (
     <>
       <Header />
@@ -16,8 +19,8 @@ export default function HairScanWelcome() {
         checklist={["Analyse IA", "Recommandations produits", "Adaptés à tes cheveux"]}
         buttons={{
           primary: {
-            text: "BIENTÔT DISPONIBLE...",
-            disabled: true,
+            text: "Commencer mon HairScan",
+            onClick: () => router.push("/hairscan/type"),
           },
         }}
       />
