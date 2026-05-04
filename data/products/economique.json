@@ -1,156 +1,456 @@
 [
   {
     "id": "eco-001",
-    "nom": "Head & Shoulders Classic Clean",
-    "marque": "Head & Shoulders",
+    "nom": "Klorane Shampooing Extra-Doux au Lait d'Avoine 200ml",
+    "marque": "Klorane",
     "categorie": "shampooing",
-    "prix": 5.49,
+    "prix": 6.3,
     "devise": "EUR",
-    "typesCheveux": ["lisses", "semi-lisses", "ondules"],
-    "porosite": ["faible", "moyenne"],
-    "problemes": ["pellicules", "gras"],
-    "objectifs": ["entretien"],
-    "ingredientsCles": ["zinc pyrithione"],
-    "sans": [],
-    "vegan": false,
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules"
+    ],
+    "porosite": [
+      "faible",
+      "moyenne"
+    ],
+    "problemes": [
+      "aucun"
+    ],
+    "objectifs": [
+      "degraissage"
+    ],
+    "budgetCategorie": "economique",
+    "ingredientsCles": [
+      "lait d'avoine",
+      "extrait d'avoine"
+    ],
+    "sans": [
+      "sulfates",
+      "silicones",
+      "parabènes"
+    ],
+    "vegan": true,
     "bio": false,
-    "noteUtilisateurs": 4.2,
-    "nombreAvis": 2340,
-    "imageUrl": "",
-    "descriptionCourte": "Shampooing antipelliculaire classique",
-    "lienAmazon": "https://www.amazon.fr/dp/B07T2XH7YK?tag=yugohair-21",
+    "noteUtilisateurs": 4.6,
+    "nombreAvis": 2400,
+    "imageUrl": "https://cdn1.costatic.com/img/product/400/65006fc7b2072/klorane-ultra-gentle-p55408.jpg",
+    "descriptionCourte": "Shampoing ultra-doux usage fréquent, sans sulfates, haute tolérance.",
+    "lienAmazon": "https://www.amazon.fr/dp/B00BFXQGE8?tag=yugohair-21",
     "active": true
   },
   {
     "id": "eco-002",
-    "nom": "L'Oréal Elvive Full Resist Shampoo",
-    "marque": "L'Oréal",
+    "nom": "Klorane Shampooing Séboréducteur à l'Ortie Bio 200ml",
+    "marque": "Klorane",
     "categorie": "shampooing",
-    "prix": 4.99,
+    "prix": 7.9,
     "devise": "EUR",
-    "typesCheveux": ["lisses", "semi-lisses", "ondules"],
-    "porosite": ["faible", "moyenne"],
-    "problemes": ["chute"],
-    "objectifs": ["fortifier", "croissance"],
-    "ingredientsCles": ["aminexil", "biotine", "vitamine B"],
-    "sans": [],
-    "vegan": false,
-    "bio": false,
-    "noteUtilisateurs": 4.1,
-    "nombreAvis": 1890,
-    "imageUrl": "",
-    "descriptionCourte": "Shampooing anti-chute fortifiant",
-    "lienAmazon": "https://www.amazon.fr/dp/B084DFKV1S?tag=yugohair-21",
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules"
+    ],
+    "porosite": [
+      "faible",
+      "moyenne"
+    ],
+    "problemes": [
+      "gras",
+      "plats"
+    ],
+    "objectifs": [
+      "degraissage",
+      "volume"
+    ],
+    "budgetCategorie": "economique",
+    "ingredientsCles": [
+      "ortie bio",
+      "extrait de plante"
+    ],
+    "sans": [
+      "silicones",
+      "parabènes"
+    ],
+    "vegan": true,
+    "bio": true,
+    "noteUtilisateurs": 4.5,
+    "nombreAvis": 1850,
+    "imageUrl": "https://cdn1.costatic.com/img/product/400/6502c9051f93b/klorane-shampoo-with-p52147.jpg",
+    "descriptionCourte": "Shampoing purifiant à l'ortie bio, régule le sébum des cuirs gras.",
+    "lienAmazon": "https://www.amazon.fr/dp/B00P9P9KPA?tag=yugohair-21",
     "active": true
   },
   {
     "id": "eco-003",
-    "nom": "Cantu Shea Butter Leave-In Conditioning Repair Cream",
-    "marque": "Cantu",
-    "categorie": "leave-in",
-    "prix": 8.99,
+    "nom": "Centifolia Shampoing Crème Cheveux Normaux Bio 250ml",
+    "marque": "Centifolia",
+    "categorie": "shampooing",
+    "prix": 9.5,
     "devise": "EUR",
-    "typesCheveux": ["boucles", "crepus", "ondules"],
-    "porosite": ["moyenne", "haute"],
-    "problemes": ["secs", "chute"],
-    "objectifs": ["fortifier", "definition"],
-    "ingredientsCles": ["beurre de karité", "huile de jojoba"],
-    "sans": ["sulfates", "silicones", "parabènes"],
-    "vegan": false,
-    "bio": false,
-    "noteUtilisateurs": 4.7,
-    "nombreAvis": 1245,
-    "imageUrl": "",
-    "descriptionCourte": "Crème sans rinçage réparatrice au beurre de karité",
-    "lienAmazon": "https://www.amazon.fr/dp/B003653MKQ?tag=yugohair-21",
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules"
+    ],
+    "porosite": [
+      "faible",
+      "moyenne"
+    ],
+    "problemes": [
+      "aucun"
+    ],
+    "objectifs": [
+      "degraissage"
+    ],
+    "budgetCategorie": "economique",
+    "ingredientsCles": [
+      "camélia",
+      "protéines d'amande douce"
+    ],
+    "sans": [
+      "sulfates",
+      "silicones",
+      "parabènes"
+    ],
+    "vegan": true,
+    "bio": true,
+    "noteUtilisateurs": 4.4,
+    "nombreAvis": 420,
+    "imageUrl": "https://centifoliabio.fr/9520-large_default/shampoing-creme-cheveux-normaux.jpg",
+    "descriptionCourte": "Shampoing crème bio Ecocert pour cheveux normaux, douceur et brillance.",
+    "lienAmazon": "https://www.amazon.fr/dp/B0853C35N5?tag=yugohair-21",
     "active": true
   },
   {
     "id": "eco-004",
-    "nom": "Eco Styler Olive Oil Styling Gel",
-    "marque": "Eco Styler",
-    "categorie": "gel",
-    "prix": 6.50,
+    "nom": "Klorane Shampoing à la Camomille Reflets Blonds 200ml",
+    "marque": "Klorane",
+    "categorie": "shampooing",
+    "prix": 8.2,
     "devise": "EUR",
-    "typesCheveux": ["boucles", "crepus", "ondules"],
-    "porosite": ["faible", "moyenne", "haute"],
-    "problemes": ["volume"],
-    "objectifs": ["definition"],
-    "ingredientsCles": ["huile d'olive", "protéine de blé"],
-    "sans": ["alcool"],
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules"
+    ],
+    "porosite": [
+      "faible",
+      "moyenne"
+    ],
+    "problemes": [
+      "aucun"
+    ],
+    "objectifs": [
+      "degraissage"
+    ],
+    "budgetCategorie": "economique",
+    "ingredientsCles": [
+      "camomille",
+      "extraits floraux"
+    ],
+    "sans": [
+      "silicones",
+      "parabènes"
+    ],
     "vegan": true,
     "bio": false,
-    "noteUtilisateurs": 4.3,
-    "nombreAvis": 890,
-    "imageUrl": "",
-    "descriptionCourte": "Gel coiffant fixation forte à l'huile d'olive",
-    "lienAmazon": "https://www.amazon.fr/dp/B001E6OCDI?tag=yugohair-21",
+    "noteUtilisateurs": 4.5,
+    "nombreAvis": 980,
+    "imageUrl": "https://static.thcdn.com/productimg/original/14005533-7955171392432296.jpg",
+    "descriptionCourte": "Shampoing illuminateur à la camomille pour cheveux blonds et clairs.",
+    "lienAmazon": "https://www.klorane.com/fr-fr/p/shampoing-a-la-camomille-3282770149272-14c39aab",
     "active": true
   },
   {
     "id": "eco-005",
-    "nom": "Garnier Ultra Doux Crème de Soin à l'Huile d'Avocat",
-    "marque": "Garnier",
-    "categorie": "leave-in",
-    "prix": 6.90,
+    "nom": "Phyto Phytovolume Shampoing Volumateur 250ml",
+    "marque": "Phyto",
+    "categorie": "shampooing",
+    "prix": 10.9,
     "devise": "EUR",
-    "typesCheveux": ["boucles", "ondules", "crepus"],
-    "porosite": ["moyenne", "haute"],
-    "problemes": ["secs"],
-    "objectifs": ["definition", "brillance"],
-    "ingredientsCles": ["huile d'avocat", "beurre de karité"],
-    "sans": ["silicones"],
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses"
+    ],
+    "porosite": [
+      "faible",
+      "moyenne"
+    ],
+    "problemes": [
+      "plats"
+    ],
+    "objectifs": [
+      "volume",
+      "tenue"
+    ],
+    "budgetCategorie": "economique",
+    "ingredientsCles": [
+      "nénuphar",
+      "mauve blanche"
+    ],
+    "sans": [
+      "silicones",
+      "parabènes"
+    ],
     "vegan": false,
     "bio": false,
-    "noteUtilisateurs": 4.3,
-    "nombreAvis": 764,
-    "imageUrl": "",
-    "descriptionCourte": "Crème sans rinçage pour boucles souples",
-    "lienAmazon": "https://www.amazon.fr/dp/B07V4HJ6RN?tag=yugohair-21",
+    "noteUtilisateurs": 4.4,
+    "nombreAvis": 760,
+    "imageUrl": "https://static.thcdn.com/productimg/1600/1600/10600084-4410946728211891.jpg",
+    "descriptionCourte": "Shampoing volumateur cheveux fins et plats, sans silicone.",
+    "lienAmazon": "https://www.amazon.fr/dp/B07YVLLKQ7?tag=yugohair-21",
     "active": true
   },
   {
     "id": "eco-006",
-    "nom": "Got2b Glued Blasting Freeze Spray",
-    "marque": "Got2b",
-    "categorie": "mousse",
-    "prix": 7.50,
+    "nom": "Klorane Shampoing Sec au Lait d'Avoine Spray 150ml",
+    "marque": "Klorane",
+    "categorie": "shampooing",
+    "prix": 9.5,
     "devise": "EUR",
-    "typesCheveux": ["lisses", "semi-lisses"],
-    "porosite": ["faible", "moyenne"],
-    "problemes": ["volume"],
-    "objectifs": ["definition", "entretien"],
-    "ingredientsCles": [],
-    "sans": [],
-    "vegan": false,
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules"
+    ],
+    "porosite": [
+      "faible",
+      "moyenne"
+    ],
+    "problemes": [
+      "gras",
+      "plats"
+    ],
+    "objectifs": [
+      "degraissage",
+      "volume"
+    ],
+    "budgetCategorie": "economique",
+    "ingredientsCles": [
+      "lait d'avoine"
+    ],
+    "sans": [
+      "parabènes"
+    ],
+    "vegan": true,
     "bio": false,
-    "noteUtilisateurs": 4.0,
-    "nombreAvis": 543,
-    "imageUrl": "",
-    "descriptionCourte": "Spray fixant pour styles structurés",
-    "lienAmazon": "https://www.amazon.fr/dp/B001OHV1GS?tag=yugohair-21",
+    "noteUtilisateurs": 4.6,
+    "nombreAvis": 5200,
+    "imageUrl": "https://cdn1.costatic.com/img/product/400/6749dc593216a/klorane-gentle-dry-p83141.jpg",
+    "descriptionCourte": "Shampoing sec qui absorbe l'excès de sébum et redonne du volume.",
+    "lienAmazon": "https://www.amazon.fr/dp/B00P9PD1UE?tag=yugohair-21",
     "active": true
   },
   {
     "id": "eco-007",
-    "nom": "Tresemmé Keratin Smooth Shine Serum",
-    "marque": "Tresemmé",
-    "categorie": "serum",
-    "prix": 8.99,
+    "nom": "Cantu Shea Butter Leave-In Conditioning Repair Cream 340g",
+    "marque": "Cantu",
+    "categorie": "leave-in",
+    "prix": 12.9,
     "devise": "EUR",
-    "typesCheveux": ["lisses", "semi-lisses", "ondules"],
-    "porosite": ["faible", "moyenne"],
-    "problemes": ["secs"],
-    "objectifs": ["brillance", "entretien"],
-    "ingredientsCles": ["kératine", "huile de marula"],
-    "sans": [],
+    "typesCheveux": [
+      "boucles",
+      "crepus"
+    ],
+    "porosite": [
+      "moyenne",
+      "haute"
+    ],
+    "problemes": [
+      "abimes",
+      "frisottis"
+    ],
+    "objectifs": [
+      "texture",
+      "densite"
+    ],
+    "budgetCategorie": "economique",
+    "ingredientsCles": [
+      "beurre de karité",
+      "huile d'argan"
+    ],
+    "sans": [
+      "sulfates",
+      "parabènes",
+      "silicones"
+    ],
     "vegan": false,
     "bio": false,
-    "noteUtilisateurs": 4.2,
-    "nombreAvis": 678,
-    "imageUrl": "",
-    "descriptionCourte": "Sérum lissant et brillance à la kératine",
-    "lienAmazon": "https://www.amazon.fr/dp/B07SXQH6NJ?tag=yugohair-21",
+    "noteUtilisateurs": 4.6,
+    "nombreAvis": 8400,
+    "imageUrl": "https://static.thcdn.com/productimg/original/12042573-7465330268777231.jpg",
+    "descriptionCourte": "Crème leave-in karité pour cheveux bouclés et crépus, hydratation intense.",
+    "lienAmazon": "https://www.amazon.fr/dp/B00449W12S?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "eco-008",
+    "nom": "Cantu Shea Butter Coconut Curling Cream 340g",
+    "marque": "Cantu",
+    "categorie": "gel",
+    "prix": 13.5,
+    "devise": "EUR",
+    "typesCheveux": [
+      "boucles",
+      "crepus",
+      "ondules"
+    ],
+    "porosite": [
+      "moyenne",
+      "haute"
+    ],
+    "problemes": [
+      "frisottis",
+      "abimes"
+    ],
+    "objectifs": [
+      "texture",
+      "tenue"
+    ],
+    "budgetCategorie": "economique",
+    "ingredientsCles": [
+      "beurre de karité",
+      "huile de coco"
+    ],
+    "sans": [
+      "sulfates",
+      "silicones",
+      "parabènes"
+    ],
+    "vegan": false,
+    "bio": false,
+    "noteUtilisateurs": 4.5,
+    "nombreAvis": 6200,
+    "imageUrl": "https://static.thcdn.com/productimg/original/12042576-2105330269541088.jpg",
+    "descriptionCourte": "Crème coiffante définition boucles, anti-frisottis longue tenue.",
+    "lienAmazon": "https://www.amazon.fr/dp/B01BV3ZL2G?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "eco-009",
+    "nom": "SheaMoisture Coconut & Hibiscus Curl & Shine Shampoo 384ml",
+    "marque": "SheaMoisture",
+    "categorie": "shampooing",
+    "prix": 13.9,
+    "devise": "EUR",
+    "typesCheveux": [
+      "ondules",
+      "boucles",
+      "crepus"
+    ],
+    "porosite": [
+      "moyenne",
+      "haute"
+    ],
+    "problemes": [
+      "frisottis",
+      "abimes"
+    ],
+    "objectifs": [
+      "texture",
+      "densite"
+    ],
+    "budgetCategorie": "economique",
+    "ingredientsCles": [
+      "coco",
+      "hibiscus",
+      "soie"
+    ],
+    "sans": [
+      "sulfates",
+      "silicones",
+      "parabènes"
+    ],
+    "vegan": false,
+    "bio": false,
+    "noteUtilisateurs": 4.5,
+    "nombreAvis": 3100,
+    "imageUrl": "https://static.thcdn.com/productimg/original/11309659-1535214721328478.jpg",
+    "descriptionCourte": "Shampoing hydratant pour boucles, sans sulfates, brillance et définition.",
+    "lienAmazon": "https://www.amazon.fr/dp/B0038TXGL0?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "eco-010",
+    "nom": "SheaMoisture Coconut & Hibiscus Curl Enhancing Smoothie 340g",
+    "marque": "SheaMoisture",
+    "categorie": "leave-in",
+    "prix": 13.5,
+    "devise": "EUR",
+    "typesCheveux": [
+      "ondules",
+      "boucles",
+      "crepus"
+    ],
+    "porosite": [
+      "moyenne",
+      "haute"
+    ],
+    "problemes": [
+      "frisottis"
+    ],
+    "objectifs": [
+      "texture"
+    ],
+    "budgetCategorie": "economique",
+    "ingredientsCles": [
+      "beurre de karité",
+      "coco",
+      "hibiscus"
+    ],
+    "sans": [
+      "sulfates",
+      "silicones",
+      "parabènes"
+    ],
+    "vegan": false,
+    "bio": false,
+    "noteUtilisateurs": 4.5,
+    "nombreAvis": 7800,
+    "imageUrl": "https://static.thcdn.com/productimg/original/11309661-6725214721475808.jpg",
+    "descriptionCourte": "Crème définition boucles à la noix de coco, anti-frisottis.",
+    "lienAmazon": "https://www.amazon.fr/dp/B0038TVH3Y?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "eco-011",
+    "nom": "Klorane Après-Shampoing à la Camomille 200ml",
+    "marque": "Klorane",
+    "categorie": "apres-shampooing",
+    "prix": 8.5,
+    "devise": "EUR",
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules"
+    ],
+    "porosite": [
+      "faible",
+      "moyenne"
+    ],
+    "problemes": [
+      "aucun"
+    ],
+    "objectifs": [
+      "degraissage"
+    ],
+    "budgetCategorie": "economique",
+    "ingredientsCles": [
+      "camomille bio"
+    ],
+    "sans": [
+      "silicones",
+      "parabènes"
+    ],
+    "vegan": true,
+    "bio": true,
+    "noteUtilisateurs": 4.5,
+    "nombreAvis": 540,
+    "imageUrl": "https://static.thcdn.com/productimg/original/14005535-1975317886429241.jpg",
+    "descriptionCourte": "Après-shampoing démêlant à la camomille bio, douceur et brillance.",
+    "lienAmazon": "https://www.amazon.fr/dp/B07K42CH7Z?tag=yugohair-21",
     "active": true
   }
 ]

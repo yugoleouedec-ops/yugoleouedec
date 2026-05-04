@@ -18,7 +18,6 @@ import {
   ChevronDown,
   ChevronLeft,
   ChevronRight,
-  X,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useFlowStore } from "@/lib/store";
@@ -268,15 +267,11 @@ function Confetti() {
 
 export default function ResultsPage() {
   const router = useRouter();
-  const { hairType, analysisResult, reset } = useFlowStore();
+  const { hairType, analysisResult, photoBase64, reset } = useFlowStore();
   const [pdfLoading, setPdfLoading] = useState(false);
   const [gestesChecked, setGestesChecked] = useState([false, false, false]);
   const [showConfetti, setShowConfetti] = useState(false);
-  const [showMorpho, setShowMorpho] = useState(false);
-  const [morphoTyping, setMorphoTyping] = useState(0);
-  const [showPremiumModal, setShowPremiumModal] = useState(false);
-  const [showEmailModal, setShowEmailModal] = useState(false);
-  const [email, setEmail] = useState("");
+  const [showRdvBloc, setShowRdvBloc] = useState(false);
   const [allRulesSeen, setAllRulesSeen] = useState(false);
 
   const theme = getThemeForType(hairType);
@@ -284,7 +279,7 @@ export default function ResultsPage() {
   const section2Ref = useRef<HTMLDivElement>(null);
   const section3Ref = useRef<HTMLDivElement>(null);
   const section4Ref = useRef<HTMLDivElement>(null);
-  const morphoRef = useRef<HTMLDivElement>(null);
+  const rdvRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!analysisResult) {
@@ -292,25 +287,17 @@ export default function ResultsPage() {
     }
   }, [analysisResult, router]);
 
-  // Confetti when all 3 gestes checked → then morpho reveal
+  // Confetti when all 3 gestes checked → then RDV CTA reveal
   useEffect(() => {
-    if (gestesChecked.every(Boolean) && !showConfetti && !showMorpho) {
+    if (gestesChecked.every(Boolean) && !showConfetti && !showRdvBloc) {
       setShowConfetti(true);
       setTimeout(() => setShowConfetti(false), 3000);
-      // After confetti + 1s pause → show morpho
       setTimeout(() => {
-        setShowMorpho(true);
-        setTimeout(() => morphoRef.current?.scrollIntoView({ behavior: "smooth" }), 100);
+        setShowRdvBloc(true);
+        setTimeout(() => rdvRef.current?.scrollIntoView({ behavior: "smooth" }), 100);
       }, 4000);
     }
-  }, [gestesChecked, showConfetti, showMorpho]);
-
-  // Morpho typing animation (1 line per second)
-  useEffect(() => {
-    if (!showMorpho || morphoTyping >= 4) return;
-    const timer = setTimeout(() => setMorphoTyping((p) => p + 1), 1000);
-    return () => clearTimeout(timer);
-  }, [showMorpho, morphoTyping]);
+  }, [gestesChecked, showConfetti, showRdvBloc]);
 
   if (!analysisResult) return null;
 
@@ -421,6 +408,35 @@ export default function ResultsPage() {
                 <Check className="size-8" style={{ color: theme.accentColor }} />
               </div>
               <h1 className="text-[32px] font-bold tracking-tight">Ton Profil Capillaire</h1>
+
+              {/* Selfie / placeholder */}
+              <div
+                className="mx-auto mt-5 size-28 rounded-full overflow-hidden flex items-center justify-center"
+                style={{
+                  backgroundColor: photoBase64 ? "transparent" : "rgba(255,255,255,0.18)",
+                  border: `2px solid ${photoBase64 ? theme.accentColor : "rgba(255,255,255,0.22)"}`,
+                  boxShadow: photoBase64 ? `0 6px 20px ${theme.accentColor}40` : "none",
+                }}
+              >
+                {photoBase64 ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={photoBase64}
+                    alt="Ton selfie"
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <svg
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="xMidYMid slice"
+                    className="w-full h-full"
+                    aria-hidden="true"
+                  >
+                    <circle cx="50" cy="40" r="18" fill="rgba(255,255,255,0.55)" />
+                    <ellipse cx="50" cy="104" rx="32" ry="26" fill="rgba(255,255,255,0.55)" />
+                  </svg>
+                )}
+              </div>
             </div>
           </Reveal>
 
@@ -471,8 +487,17 @@ export default function ResultsPage() {
                 className="rounded-2xl p-6 flex flex-col gap-4"
                 style={{ backgroundColor: "rgba(255,255,255,0.1)", backdropFilter: "blur(14px)", border: "1px solid rgba(255,255,255,0.15)" }}
               >
-                <div className="w-full aspect-square max-w-[200px] mx-auto rounded-lg bg-white/10 flex items-center justify-center">
-                  <span className="text-6xl">🧴</span>
+                <div className="w-full aspect-square max-w-[200px] mx-auto rounded-lg bg-white/10 flex items-center justify-center overflow-hidden">
+                  {p.imageUrl ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={p.imageUrl}
+                      alt={p.nom}
+                      className="w-full h-full object-contain p-2"
+                    />
+                  ) : (
+                    <span className="text-6xl">🧴</span>
+                  )}
                 </div>
                 <div>
                   <p className="text-lg font-semibold">{p.nom}</p>
@@ -503,13 +528,6 @@ export default function ResultsPage() {
 
         <Reveal delay={0.2} className="mt-8 flex flex-col items-center gap-4 max-w-md mx-auto w-full">
           <p className="text-lg font-semibold">Coût total : <span style={{ color: theme.accentColor }}>{coutTotal.toFixed(2)}€</span></p>
-          <button
-            onClick={() => setShowEmailModal(true)}
-            className="w-full py-4 rounded-xl font-semibold text-base text-white transition-all duration-300 hover:scale-[1.02]"
-            style={{ backgroundColor: theme.accentColor, boxShadow: `0 8px 24px ${theme.accentColor}4D` }}
-          >
-            SAUVEGARDER MA ROUTINE
-          </button>
         </Reveal>
       </section>
 
@@ -644,7 +662,7 @@ export default function ResultsPage() {
 
         {/* Completion message */}
         <AnimatePresence>
-          {gestesChecked.every(Boolean) && !showMorpho && (
+          {gestesChecked.every(Boolean) && !showRdvBloc && (
             <motion.div
               className="mt-8 text-center"
               initial={{ opacity: 0, scale: 0.9 }}
@@ -661,11 +679,11 @@ export default function ResultsPage() {
       {/* ════════ Everything below gated behind 3 checkboxes ════════ */}
       {gestesChecked.every(Boolean) && (<>
 
-      {/* ════════ SECTION 3.5 : ANALYSE MORPHO ════════ */}
+      {/* ════════ SECTION 3.5 : CTA PRISE DE RENDEZ-VOUS ════════ */}
       <AnimatePresence>
-        {showMorpho && (
+        {showRdvBloc && (
           <motion.section
-            ref={morphoRef}
+            ref={rdvRef}
             className="px-5 py-16"
             style={{ backgroundColor: themeColors.bgPrimary }}
             initial={{ opacity: 0, y: 40 }}
@@ -681,113 +699,38 @@ export default function ResultsPage() {
                 transition={{ delay: 0.2 }}
               >
                 <p className="text-[24px] font-bold">✅ T&apos;as unlock tous les gestes !</p>
-                <p className="mt-2 text-lg" style={{ color: "rgba(255,255,255,0.8)" }}>Mais attends...</p>
+                <p className="mt-2 text-lg" style={{ color: "rgba(255,255,255,0.8)" }}>Le vrai changement commence maintenant.</p>
               </motion.div>
 
               {/* Separator */}
               <div className="w-full h-px my-6" style={{ backgroundColor: "rgba(255,255,255,0.2)" }} />
 
-              {/* Revelation text */}
+              {/* RDV card */}
               <motion.div
-                className="text-center"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.8 }}
-              >
-                <p className="text-base leading-relaxed" style={{ color: "rgba(255,255,255,0.9)" }}>
-                  J&apos;ai analysé ton visage pendant que tu faisais l&apos;analyse.
-                </p>
-                <p className="mt-4 text-lg font-bold">Résultat :</p>
-              </motion.div>
-
-              {/* Morpho card */}
-              <motion.div
-                className="w-full mt-5 rounded-2xl p-6"
-                style={{ backgroundColor: "rgba(255,255,255,0.1)", backdropFilter: "blur(14px)", border: "2px solid rgba(255,255,255,0.15)" }}
+                className="w-full rounded-2xl p-6 flex flex-col gap-4"
+                style={{
+                  background: `linear-gradient(135deg, ${theme.accentColor}25, ${themeColors.accentGold}20)`,
+                  backdropFilter: "blur(14px)",
+                  border: `2px solid ${theme.accentColor}80`,
+                }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1.2 }}
+                transition={{ delay: 0.6 }}
               >
-                <p className="text-xl font-bold mb-4">TON PROFIL MORPHOLOGIQUE</p>
+                <p className="text-2xl font-bold leading-tight">Réserve ta coupe avec Yugo</p>
+                <p className="text-base leading-relaxed" style={{ color: "rgba(255,255,255,0.85)" }}>
+                  Une routine c&apos;est bien. Une coupe pensée pour ta morpho et tes cheveux, c&apos;est mieux. On en discute en salon.
+                </p>
 
-                <div className="flex flex-col gap-3">
-                  <AnimatePresence>
-                    {morphoTyping >= 1 && (
-                      <motion.p className="text-base" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }}>
-                        <span style={{ color: "rgba(255,255,255,0.5)" }}>Forme visage :</span>{" "}
-                        <span className="font-semibold">Ovale</span>
-                      </motion.p>
-                    )}
-                  </AnimatePresence>
-                  <AnimatePresence>
-                    {morphoTyping >= 2 && (
-                      <motion.p className="text-base" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }}>
-                        <span style={{ color: "rgba(255,255,255,0.5)" }}>Front :</span>{" "}
-                        <span className="font-semibold">Proportionné</span>
-                      </motion.p>
-                    )}
-                  </AnimatePresence>
-                  <AnimatePresence>
-                    {morphoTyping >= 3 && (
-                      <motion.p className="text-base" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }}>
-                        <span style={{ color: "rgba(255,255,255,0.5)" }}>Mâchoire :</span>{" "}
-                        <span className="font-semibold">Angulaire</span>
-                      </motion.p>
-                    )}
-                  </AnimatePresence>
-                </div>
-
-                {morphoTyping >= 4 && (
-                  <motion.p
-                    className="mt-5 text-base font-medium"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                  >
-                    Donc voici les 3 coupes qui te vont LE MIEUX :
-                  </motion.p>
-                )}
-              </motion.div>
-
-              {/* Premium locked zone */}
-              {morphoTyping >= 4 && (
-                <motion.div
-                  className="w-full mt-4"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3 }}
+                <a
+                  href="https://calendly.com/yugoleouedec/prise-de-rendez-vous"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
                 >
-                  <div className="relative rounded-xl overflow-hidden" style={{ backgroundColor: "rgba(0,0,0,0.3)", minHeight: 200 }}>
-                    {/* Blurred preview */}
-                    <div className="p-5 flex flex-col gap-3 select-none" style={{ filter: "blur(8px)", opacity: 0.4 }}>
-                      <p className="text-base">1. Dégradé haut texturé avec frange effilée pour adoucir le front et...</p>
-                      <p className="text-base">2. Undercut moderne avec volume sur le dessus pour structurer le...</p>
-                      <p className="text-base">3. Coupe française classique revisitée avec mèche naturelle pour...</p>
-                    </div>
-
-                    {/* Gradient overlay */}
-                    <div
-                      className="absolute inset-0"
-                      style={{ background: "linear-gradient(to bottom, transparent 0%, rgba(44, 24, 16, 0.95) 80%)" }}
-                    />
-
-                    {/* Lock icon */}
-                    <div className="absolute inset-0 flex flex-col items-center justify-center gap-2">
-                      <motion.div
-                        animate={{ scale: [1, 1.05, 1] }}
-                        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                      >
-                        <Lock className="size-16" style={{ color: theme.accentColor }} />
-                      </motion.div>
-                      <p className="text-sm font-medium" style={{ color: theme.accentColor }}>🔒 Contenu Premium</p>
-                      <p className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>Réservé aux membres Yugo Access</p>
-                    </div>
-                  </div>
-
-                  {/* CTA */}
                   <motion.button
-                    onClick={() => setShowPremiumModal(true)}
-                    className="w-full mt-6 py-4 rounded-xl font-bold text-lg text-white transition-all duration-300 hover:scale-[1.02]"
-                    style={{ backgroundColor: theme.accentColor }}
+                    className="w-full mt-2 py-4 rounded-xl font-bold text-lg text-white transition-all duration-300 hover:scale-[1.02]"
+                    style={{ backgroundColor: theme.accentColor, boxShadow: `0 8px 24px ${theme.accentColor}4D` }}
                     animate={{
                       boxShadow: [
                         `0 0 0 0px ${theme.accentColor}00`,
@@ -796,77 +739,31 @@ export default function ResultsPage() {
                     }}
                     transition={{ duration: 2, repeat: Infinity, ease: "easeOut" }}
                   >
-                    DÉBLOQUE L&apos;ANALYSE COMPLÈTE
+                    PRENDRE RENDEZ-VOUS
                   </motion.button>
+                </a>
+              </motion.div>
 
-                  <p className="mt-3 text-center text-sm" style={{ color: "rgba(255,255,255,0.4)" }}>
-                    Ou continue avec la version gratuite (produits seulement){" "}
-                    <button
-                      onClick={() => scrollTo(section4Ref)}
-                      className="underline underline-offset-2 transition-colors"
-                      style={{ color: theme.accentColor }}
-                    >
-                      VOIR MES PRODUITS →
-                    </button>
-                  </p>
-                </motion.div>
-              )}
+              <p className="mt-4 text-center text-sm" style={{ color: "rgba(255,255,255,0.4)" }}>
+                Ou continue avec la version gratuite{" "}
+                <button
+                  onClick={() => scrollTo(section4Ref)}
+                  className="underline underline-offset-2 transition-colors"
+                  style={{ color: theme.accentColor }}
+                >
+                  VOIR MES PRODUITS →
+                </button>
+              </p>
             </div>
           </motion.section>
         )}
       </AnimatePresence>
 
-      {/* ════════ SECTION 5 : GRATUIT vs PREMIUM ════════ */}
-      <section className="px-5 py-16" style={{ backgroundColor: themeColors.bgPrimary }}>
-        <Reveal className="text-center mb-8">
-          <h2 className="text-[24px] font-bold">T&apos;as aimé ton analyse gratuite ?</h2>
-        </Reveal>
-
+      {/* ════════ SECTION 5 : CTAs FINAUX ════════ */}
+      <section className="px-5 pt-2 pb-16" style={{ backgroundColor: themeColors.bgPrimary }}>
         <div className="flex flex-col gap-4 max-w-md mx-auto">
-          {/* Free card */}
-          <Reveal delay={0.1}>
-            <div className="rounded-2xl p-6" style={{ backgroundColor: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)" }}>
-              <h3 className="text-lg font-semibold mb-4">✅ CE QUE TU VIENS D&apos;AVOIR</h3>
-              <ul className="space-y-2 text-sm" style={{ color: "rgba(255,255,255,0.7)" }}>
-                <li className="flex items-center gap-2"><Check className="size-4 text-green-500 flex-shrink-0" /> 3 produits recommandés</li>
-                <li className="flex items-center gap-2"><Check className="size-4 text-green-500 flex-shrink-0" /> Routine de base</li>
-                <li className="flex items-center gap-2"><Check className="size-4 text-green-500 flex-shrink-0" /> Conseils essentiels</li>
-              </ul>
-            </div>
-          </Reveal>
-
-          {/* Premium card */}
-          <Reveal delay={0.2}>
-            <div
-              className="rounded-2xl p-6 relative overflow-hidden"
-              style={{ background: `linear-gradient(135deg, ${theme.accentColor}20, ${themeColors.accentGold}20)`, border: `2px solid ${theme.accentColor}` }}
-            >
-              <span className="inline-block text-xs font-bold px-3 py-1 rounded-full mb-4" style={{ backgroundColor: theme.accentColor, color: "white" }}>
-                🔥 SI TU VEUX ALLER +LOIN
-              </span>
-              <ul className="space-y-2 text-sm" style={{ color: "rgba(255,255,255,0.8)" }}>
-                <li className="flex items-center gap-2"><Lock className="size-4 flex-shrink-0" style={{ color: themeColors.accentGold }} /> 10+ produits/catégorie</li>
-                <li className="flex items-center gap-2"><Lock className="size-4 flex-shrink-0" style={{ color: themeColors.accentGold }} /> Routine hebdo détaillée</li>
-                <li className="flex items-center gap-2"><Lock className="size-4 flex-shrink-0" style={{ color: themeColors.accentGold }} /> Tutoriels vidéo (5-10min)</li>
-                <li className="flex items-center gap-2"><Lock className="size-4 flex-shrink-0" style={{ color: themeColors.accentGold }} /> Suivi mensuel perso</li>
-                <li className="flex items-center gap-2"><Lock className="size-4 flex-shrink-0" style={{ color: themeColors.accentGold }} /> Accès chat direct Yugo</li>
-              </ul>
-              <p className="text-xl font-bold mt-5">9€/mois <span className="text-sm font-normal" style={{ color: "rgba(255,255,255,0.5)" }}>• Sans engagement</span></p>
-              <button
-                className="w-full mt-4 py-4 rounded-xl font-semibold text-base text-white transition-all duration-300 hover:scale-[1.02]"
-                style={{ backgroundColor: theme.accentColor, boxShadow: `0 8px 24px ${theme.accentColor}4D` }}
-              >
-                ESSAYER 7 JOURS GRATUIT
-              </button>
-            </div>
-          </Reveal>
-
-          <p className="text-center text-sm mt-2" style={{ color: "rgba(255,255,255,0.4)" }}>
-            Ou continue avec la version gratuite (no stress)
-          </p>
-
           {/* Final CTAs */}
-          <Reveal delay={0.3} className="flex gap-3 mt-4">
+          <Reveal delay={0.1} className="flex gap-3">
             <button
               onClick={handleRestart}
               className="flex-1 py-3 rounded-xl font-semibold text-sm border-2 transition-all duration-300 hover:scale-[1.02]"
@@ -890,7 +787,7 @@ export default function ResultsPage() {
           </Reveal>
 
           {/* PDF download */}
-          <Reveal delay={0.4}>
+          <Reveal delay={0.2}>
             <button
               onClick={handleDownloadPDF}
               disabled={pdfLoading}
@@ -907,139 +804,6 @@ export default function ResultsPage() {
       </>)}
       {/* ════════ End gated content ════════ */}
 
-      {/* ════════ PREMIUM MODAL ════════ */}
-      <AnimatePresence>
-        {showPremiumModal && (
-          <motion.div
-            className="fixed inset-0 z-[1000] flex items-center justify-center px-5"
-            style={{ backgroundColor: "rgba(0,0,0,0.8)", backdropFilter: "blur(4px)" }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setShowPremiumModal(false)}
-          >
-            <motion.div
-              className="w-full max-w-[500px] rounded-3xl p-8 relative"
-              style={{ background: `linear-gradient(135deg, ${theme.accentColor}, ${themeColors.accentGold})` }}
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              transition={{ duration: 0.3, ease: "easeOut" }}
-              onClick={(e) => e.stopPropagation()}
-            >
-              {/* Close */}
-              <button
-                onClick={() => setShowPremiumModal(false)}
-                className="absolute top-4 right-4 text-white/80 hover:text-white transition-colors"
-              >
-                <X className="size-6" />
-              </button>
-
-              {/* Title */}
-              <h3 className="text-2xl font-bold text-white text-center pr-6">
-                Débloque ton analyse morpho complète avec Yugo Access
-              </h3>
-
-              <div className="w-full h-px my-5 bg-white/20" />
-
-              {/* Benefits */}
-              <p className="text-lg font-bold text-white mb-4">📦 IMMÉDIAT À L'INSCRIPTION</p>
-              <div className="flex flex-col gap-2">
-                <p className="text-base text-white">✅ Produit capillaire livré chez toi</p>
-                <p className="text-xs text-white/50 ml-6">(shampooing, gel ou cire au choix)</p>
-                <p className="text-base text-white">✅ Carte fidélité activée</p>
-                <p className="text-base text-white">✅ Accès groupe privé</p>
-              </div>
-
-              <div className="w-full h-px my-5 bg-white/20" />
-
-              <p className="text-sm font-bold text-white mb-3">💇 TOUS LES MOIS</p>
-              <div className="text-sm text-white/90 leading-[1.8]">
-                <p>✅ 1 coupe incluse</p>
-                <p>✅ Crédit 5€ produits (cumulable)</p>
-                <p>✅ 2ème coupe à moitié prix</p>
-                <p>✅ Priorité réservation</p>
-              </div>
-
-              <div className="w-full h-px my-5 bg-white/20" />
-
-              <p className="text-sm font-bold text-white mb-3">🎁 RÉCOMPENSES FIDÉLITÉ</p>
-              <div className="text-sm text-white/90 leading-[1.8]">
-                <p>🏅 5 coupes → Cire gratuite</p>
-                <p>🏅 10 coupes → Kit 3 produits gratuit</p>
-                <p>🏅 15 coupes → Kit premium 5 produits</p>
-                <p>🏅 20 coupes → Mois gratuit + kit exclusif</p>
-              </div>
-
-              <div className="w-full h-px my-5 bg-white/20" />
-
-              {/* Price */}
-              <p className="text-xl font-bold text-white text-center">25€/mois <span className="text-sm text-white/50 line-through">120€</span></p>
-              <p className="text-sm text-white/70 text-center mt-1">🚫 Sans engagement • Annule quand tu veux</p>
-
-              {/* CTA */}
-              <button
-                className="w-full mt-5 py-4 rounded-xl font-bold text-lg transition-all duration-300 active:scale-95 opacity-70 cursor-default"
-                style={{ backgroundColor: "white", color: theme.accentColor }}
-              >
-                BIENTÔT DISPONIBLE...
-              </button>
-
-              {/* Dismiss */}
-              <button
-                onClick={() => { setShowPremiumModal(false); setTimeout(() => scrollTo(section4Ref), 300); }}
-                className="w-full mt-4 text-center text-sm text-white/50 hover:text-white/80 underline-offset-2 hover:underline transition-colors"
-              >
-                Non merci, je reste en gratuit
-              </button>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      {/* ════════ EMAIL MODAL ════════ */}
-      <AnimatePresence>
-        {showEmailModal && (
-          <motion.div
-            className="fixed inset-0 z-50 flex items-center justify-center px-5"
-            style={{ backgroundColor: "rgba(0,0,0,0.7)" }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setShowEmailModal(false)}
-          >
-            <motion.div
-              className="w-full max-w-sm rounded-2xl p-6 flex flex-col gap-4"
-              style={{ backgroundColor: themeColors.bgPrimary, border: `1px solid rgba(255,255,255,0.15)` }}
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              onClick={(e) => e.stopPropagation()}
-            >
-              <div className="flex items-center justify-between">
-                <h3 className="text-lg font-bold">Reçois ta routine par email</h3>
-                <button onClick={() => setShowEmailModal(false)} className="p-1 rounded-full bg-white/10">
-                  <X className="size-4" />
-                </button>
-              </div>
-              <input
-                type="email"
-                placeholder="ton@email.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full rounded-xl px-4 py-3 text-sm bg-white/10 border border-white/20 text-white placeholder:text-white/40 outline-none focus:border-white/40"
-              />
-              <button
-                onClick={() => { setShowEmailModal(false); setEmail(""); }}
-                className="w-full py-3 rounded-xl font-semibold text-base text-white"
-                style={{ backgroundColor: theme.accentColor }}
-              >
-                Envoyer
-              </button>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </div>
   );
 }

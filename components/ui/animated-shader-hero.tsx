@@ -355,7 +355,7 @@ const Hero: React.FC<HeroProps> = ({
               <ul className="mt-5 flex flex-col items-center gap-2">
                 {checklist.map((item, i) => (
                   <li key={i} className="flex items-center gap-2 text-base md:text-lg" style={{ color: '#E8DFC8' }}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2D5016" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0"><path d="M20 6 9 17l-5-5" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E8742F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0"><path d="M20 6 9 17l-5-5" /></svg>
                     {item}
                   </li>
                 ))}

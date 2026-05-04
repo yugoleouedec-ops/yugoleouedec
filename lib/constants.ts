@@ -36,7 +36,7 @@ export const HAIR_TYPES: HairTypeOption[] = [
     label: "Curly",
     description: "Texture serrée en zigzag, volume naturel important",
     color: hairThemes.crepus.accentColor,
-    image: null,
+    image: "/images/hair-types/Curly.png",
   },
 ];
 

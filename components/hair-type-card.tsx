@@ -31,10 +31,12 @@ export function HairTypeCard({ type, isActive }: HairTypeCardProps) {
       {/* Hair image or fallback icon */}
       {type.image ? (
         <div className="relative aspect-[3/4]">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={type.image}
             alt={type.label}
-            className="absolute inset-0 h-full w-full object-cover"
+            className="absolute left-0 right-0 top-0 w-full object-cover"
+            style={{ height: "calc(100% + 80px)", objectPosition: "center 80%" }}
           />
           {/* Overlay gradient for text readability */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />

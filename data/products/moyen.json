@@ -1,178 +1,592 @@
 [
   {
-    "id": "moy-001",
-    "nom": "Shea Moisture Curl & Shine Shampoo",
-    "marque": "Shea Moisture",
-    "categorie": "shampooing",
-    "prix": 15.99,
-    "devise": "EUR",
-    "typesCheveux": ["boucles", "crepus"],
-    "porosite": ["moyenne", "haute"],
-    "problemes": ["secs"],
-    "objectifs": ["definition", "brillance"],
-    "ingredientsCles": ["beurre de karité", "huile de coco"],
-    "sans": ["sulfates", "parabènes"],
-    "vegan": true,
-    "bio": false,
-    "noteUtilisateurs": 4.5,
-    "nombreAvis": 632,
-    "imageUrl": "",
-    "descriptionCourte": "Shampooing hydratant pour boucles définies",
-    "lienAmazon": "https://www.amazon.fr/dp/B00YN2FG7W?tag=yugohair-21",
-    "active": true
-  },
-  {
-    "id": "moy-002",
-    "nom": "Nioxin System 2 Cleanser Shampoo",
-    "marque": "Nioxin",
-    "categorie": "shampooing",
-    "prix": 24.90,
-    "devise": "EUR",
-    "typesCheveux": ["lisses", "semi-lisses", "ondules"],
-    "porosite": ["faible", "moyenne"],
-    "problemes": ["chute", "volume"],
-    "objectifs": ["fortifier", "croissance"],
-    "ingredientsCles": ["biotine", "menthe poivrée"],
-    "sans": ["sulfates"],
-    "vegan": true,
-    "bio": false,
-    "noteUtilisateurs": 4.4,
-    "nombreAvis": 567,
-    "imageUrl": "",
-    "descriptionCourte": "Shampooing densifiant pour cheveux clairsemés",
-    "lienAmazon": "https://www.amazon.fr/dp/B006L3HR12?tag=yugohair-21",
-    "active": true
-  },
-  {
-    "id": "moy-003",
-    "nom": "As I Am DoubleButter Cream",
-    "marque": "As I Am",
-    "categorie": "leave-in",
-    "prix": 14.50,
-    "devise": "EUR",
-    "typesCheveux": ["crepus", "boucles"],
-    "porosite": ["haute"],
-    "problemes": ["secs"],
-    "objectifs": ["definition", "fortifier"],
-    "ingredientsCles": ["beurre de karité", "ricin"],
-    "sans": ["sulfates", "parabènes", "silicones"],
-    "vegan": true,
-    "bio": false,
-    "noteUtilisateurs": 4.6,
-    "nombreAvis": 432,
-    "imageUrl": "",
-    "descriptionCourte": "Crème hydratante ultra-riche pour cheveux crépus",
-    "lienAmazon": "https://www.amazon.fr/dp/B004OTDFZM?tag=yugohair-21",
-    "active": true
-  },
-  {
-    "id": "moy-004",
-    "nom": "SheaMoisture Jamaican Black Castor Oil Masque",
-    "marque": "Shea Moisture",
-    "categorie": "masque",
-    "prix": 13.99,
-    "devise": "EUR",
-    "typesCheveux": ["boucles", "crepus"],
-    "porosite": ["moyenne", "haute"],
-    "problemes": ["secs", "chute"],
-    "objectifs": ["fortifier", "croissance"],
-    "ingredientsCles": ["huile de ricin noire", "menthe poivrée"],
-    "sans": ["sulfates", "parabènes"],
-    "vegan": true,
-    "bio": false,
-    "noteUtilisateurs": 4.5,
-    "nombreAvis": 721,
-    "imageUrl": "",
-    "descriptionCourte": "Masque fortifiant à l'huile de ricin noir jamaïcain",
-    "lienAmazon": "https://www.amazon.fr/dp/B00MXD0YB8?tag=yugohair-21",
-    "active": true
-  },
-  {
-    "id": "moy-005",
-    "nom": "Redken Brewer's Spray",
-    "marque": "Redken",
-    "categorie": "mousse",
-    "prix": 19.90,
-    "devise": "EUR",
-    "typesCheveux": ["lisses", "semi-lisses", "ondules"],
-    "porosite": ["faible", "moyenne"],
-    "problemes": ["volume"],
-    "objectifs": ["definition", "entretien"],
-    "ingredientsCles": ["protéine de malt"],
-    "sans": [],
-    "vegan": false,
-    "bio": false,
-    "noteUtilisateurs": 4.3,
-    "nombreAvis": 345,
-    "imageUrl": "",
-    "descriptionCourte": "Spray texturisant pour volume et tenue naturelle",
-    "lienAmazon": "https://www.amazon.fr/dp/B004UWG21S?tag=yugohair-21",
-    "active": true
-  },
-  {
-    "id": "moy-006",
-    "nom": "Nizoral Shampooing Anti-Pelliculaire",
-    "marque": "Nizoral",
-    "categorie": "shampooing",
-    "prix": 11.90,
-    "devise": "EUR",
-    "typesCheveux": ["lisses", "semi-lisses", "ondules", "boucles", "crepus"],
-    "porosite": ["faible", "moyenne", "haute"],
-    "problemes": ["pellicules"],
-    "objectifs": ["entretien"],
-    "ingredientsCles": ["kétoconazole 2%"],
-    "sans": [],
-    "vegan": false,
-    "bio": false,
-    "noteUtilisateurs": 4.6,
-    "nombreAvis": 4530,
-    "imageUrl": "",
-    "descriptionCourte": "Shampooing antifongique pour pellicules persistantes",
-    "lienAmazon": "https://www.amazon.fr/dp/B00BJD6H22?tag=yugohair-21",
-    "active": true
-  },
-  {
-    "id": "moy-007",
-    "nom": "Uncle Funky's Daughter Curly Magic Gel",
-    "marque": "Uncle Funky's Daughter",
+    "id": "moyen-001",
+    "nom": "Maria Nila Styling Paste 100ml",
+    "marque": "Maria Nila",
     "categorie": "gel",
-    "prix": 18.90,
+    "prix": 32,
     "devise": "EUR",
-    "typesCheveux": ["boucles", "crepus"],
-    "porosite": ["moyenne", "haute"],
-    "problemes": ["secs", "volume"],
-    "objectifs": ["definition"],
-    "ingredientsCles": ["aloe vera", "glycérine végétale"],
-    "sans": ["sulfates", "silicones", "parabènes"],
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules"
+    ],
+    "porosite": [
+      "faible",
+      "moyenne"
+    ],
+    "problemes": [
+      "plats"
+    ],
+    "objectifs": [
+      "texture",
+      "tenue",
+      "volume"
+    ],
+    "budgetCategorie": "moyen",
+    "ingredientsCles": [
+      "cire végétale",
+      "Color Guard Complex"
+    ],
+    "sans": [
+      "sulfates",
+      "parabènes"
+    ],
     "vegan": true,
-    "bio": true,
-    "noteUtilisateurs": 4.4,
-    "nombreAvis": 289,
-    "imageUrl": "",
-    "descriptionCourte": "Gel définissant naturel pour boucles sans résidu",
-    "lienAmazon": "https://www.amazon.fr/dp/B002X9A6SY?tag=yugohair-21",
+    "bio": false,
+    "noteUtilisateurs": 4.6,
+    "nombreAvis": 480,
+    "imageUrl": "https://marianila.com/cdn/shop/files/3659-packshot_720x.jpg",
+    "descriptionCourte": "Pâte coiffante texturisante, tenue flexible, 100% vegan.",
+    "lienAmazon": "https://www.amazon.fr/dp/B0F32XPP98?tag=yugohair-21",
     "active": true
   },
   {
-    "id": "moy-008",
-    "nom": "Vichy Dercos Energisant Shampooing",
-    "marque": "Vichy",
+    "id": "moyen-002",
+    "nom": "Olaplex No. 4 Bond Maintenance Shampoo 250ml",
+    "marque": "Olaplex",
     "categorie": "shampooing",
-    "prix": 13.50,
+    "prix": 28.9,
     "devise": "EUR",
-    "typesCheveux": ["lisses", "semi-lisses", "ondules"],
-    "porosite": ["faible", "moyenne"],
-    "problemes": ["chute"],
-    "objectifs": ["croissance", "fortifier"],
-    "ingredientsCles": ["aminexil", "vitamines B"],
-    "sans": ["parabènes"],
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules",
+      "boucles",
+      "crepus"
+    ],
+    "porosite": [
+      "moyenne",
+      "haute"
+    ],
+    "problemes": [
+      "abimes"
+    ],
+    "objectifs": [
+      "tenue"
+    ],
+    "budgetCategorie": "moyen",
+    "ingredientsCles": [
+      "bis-aminopropyl diglycol dimaleate"
+    ],
+    "sans": [
+      "sulfates",
+      "parabènes"
+    ],
+    "vegan": true,
+    "bio": false,
+    "noteUtilisateurs": 4.5,
+    "nombreAvis": 12500,
+    "imageUrl": "https://olaplex.com/cdn/shop/files/1-N4_product_1440.png",
+    "descriptionCourte": "Shampoing reconstituant pour cheveux abîmés, sans sulfates.",
+    "lienAmazon": "https://www.amazon.fr/dp/B08TWQ37XF?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "moyen-003",
+    "nom": "Olaplex No. 3 Hair Perfector 100ml",
+    "marque": "Olaplex",
+    "categorie": "masque",
+    "prix": 29.9,
+    "devise": "EUR",
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules",
+      "boucles",
+      "crepus"
+    ],
+    "porosite": [
+      "moyenne",
+      "haute"
+    ],
+    "problemes": [
+      "abimes",
+      "frisottis"
+    ],
+    "objectifs": [
+      "tenue",
+      "texture"
+    ],
+    "budgetCategorie": "moyen",
+    "ingredientsCles": [
+      "bis-aminopropyl diglycol dimaleate"
+    ],
+    "sans": [
+      "sulfates",
+      "parabènes"
+    ],
+    "vegan": true,
+    "bio": false,
+    "noteUtilisateurs": 4.5,
+    "nombreAvis": 24000,
+    "imageUrl": "https://olaplex.com/cdn/shop/files/2025_No3PLUS_100ml_Product_Packshot_01_GBL_1440x1440_a2cbc609-6363-49e1-b2d2-7acd8a72672f.png",
+    "descriptionCourte": "Soin pré-shampoing reconstructeur de liens, répare les fibres abîmées.",
+    "lienAmazon": "https://www.amazon.fr/dp/B08TWTQDCX?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "moyen-004",
+    "nom": "Maria Nila Pure Volume Shampoo 350ml",
+    "marque": "Maria Nila",
+    "categorie": "shampooing",
+    "prix": 26,
+    "devise": "EUR",
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules"
+    ],
+    "porosite": [
+      "faible",
+      "moyenne"
+    ],
+    "problemes": [
+      "plats"
+    ],
+    "objectifs": [
+      "volume",
+      "densite"
+    ],
+    "budgetCategorie": "moyen",
+    "ingredientsCles": [
+      "vitamine B5",
+      "Color Guard Complex"
+    ],
+    "sans": [
+      "sulfates",
+      "parabènes"
+    ],
+    "vegan": true,
+    "bio": false,
+    "noteUtilisateurs": 4.6,
+    "nombreAvis": 1620,
+    "imageUrl": "https://marianila.com/cdn/shop/files/3610-packshot.jpg",
+    "descriptionCourte": "Shampoing volume cheveux fins, vitamine B5, 100% vegan.",
+    "lienAmazon": "https://www.amazon.fr/dp/B01D554F7A?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "moyen-005",
+    "nom": "Maria Nila Head & Hair Heal Shampoo 350ml",
+    "marque": "Maria Nila",
+    "categorie": "shampooing",
+    "prix": 28,
+    "devise": "EUR",
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules",
+      "boucles",
+      "crepus"
+    ],
+    "porosite": [
+      "faible",
+      "moyenne",
+      "haute"
+    ],
+    "problemes": [
+      "pellicules",
+      "densite"
+    ],
+    "objectifs": [
+      "antipelliculaire",
+      "densite"
+    ],
+    "budgetCategorie": "moyen",
+    "ingredientsCles": [
+      "aloe vera",
+      "piroctone olamine"
+    ],
+    "sans": [
+      "sulfates",
+      "parabènes"
+    ],
+    "vegan": true,
+    "bio": false,
+    "noteUtilisateurs": 4.5,
+    "nombreAvis": 920,
+    "imageUrl": "https://marianila.com/cdn/shop/files/13650-packshot.jpg",
+    "descriptionCourte": "Shampoing apaisant cuir chevelu sensible, anti-pelliculaire et stimulant.",
+    "lienAmazon": "https://www.amazon.fr/dp/B071VZV484?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "moyen-006",
+    "nom": "K18 Leave-In Molecular Repair Hair Mask 50ml",
+    "marque": "K18",
+    "categorie": "masque",
+    "prix": 39.9,
+    "devise": "EUR",
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules",
+      "boucles",
+      "crepus"
+    ],
+    "porosite": [
+      "moyenne",
+      "haute"
+    ],
+    "problemes": [
+      "abimes",
+      "frisottis"
+    ],
+    "objectifs": [
+      "tenue"
+    ],
+    "budgetCategorie": "moyen",
+    "ingredientsCles": [
+      "peptide K18",
+      "biomimétique"
+    ],
+    "sans": [
+      "sulfates",
+      "silicones",
+      "parabènes"
+    ],
+    "vegan": true,
+    "bio": false,
+    "noteUtilisateurs": 4.4,
+    "nombreAvis": 5800,
+    "imageUrl": "https://www.k18hair.com/cdn/shop/files/00_Mask_768x.jpg",
+    "descriptionCourte": "Masque sans rinçage peptide, répare les fibres en 4 minutes.",
+    "lienAmazon": "https://www.amazon.fr/dp/B0961ZS96M?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "moyen-007",
+    "nom": "Davines Love Curl Shampoo 250ml",
+    "marque": "Davines",
+    "categorie": "shampooing",
+    "prix": 24.9,
+    "devise": "EUR",
+    "typesCheveux": [
+      "ondules",
+      "boucles",
+      "crepus"
+    ],
+    "porosite": [
+      "moyenne",
+      "haute"
+    ],
+    "problemes": [
+      "frisottis"
+    ],
+    "objectifs": [
+      "texture",
+      "volume"
+    ],
+    "budgetCategorie": "moyen",
+    "ingredientsCles": [
+      "extrait d'amande",
+      "beurre"
+    ],
+    "sans": [
+      "sulfates",
+      "parabènes"
+    ],
+    "vegan": false,
+    "bio": false,
+    "noteUtilisateurs": 4.5,
+    "nombreAvis": 720,
+    "imageUrl": "https://us.davines.com/cdn/shop/files/Davines-70110UCL-LOVE-CURL-SH-250ML-8004608300670-1_2000x.jpg",
+    "descriptionCourte": "Shampoing définition boucles à l'amande, contrôle des frisottis.",
+    "lienAmazon": "https://www.amazon.fr/dp/B0026H1JOQ?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "moyen-008",
+    "nom": "Davines OI Oil 50ml",
+    "marque": "Davines",
+    "categorie": "huile",
+    "prix": 32,
+    "devise": "EUR",
+    "typesCheveux": [
+      "semi-lisses",
+      "ondules",
+      "boucles",
+      "crepus"
+    ],
+    "porosite": [
+      "moyenne",
+      "haute"
+    ],
+    "problemes": [
+      "frisottis",
+      "abimes"
+    ],
+    "objectifs": [
+      "texture"
+    ],
+    "budgetCategorie": "moyen",
+    "ingredientsCles": [
+      "huile de roucou"
+    ],
+    "sans": [
+      "parabènes"
+    ],
+    "vegan": false,
+    "bio": false,
+    "noteUtilisateurs": 4.6,
+    "nombreAvis": 1850,
+    "imageUrl": "https://us.davines.com/cdn/shop/files/Davines-76000FR-oi-oil-135ml-8004608288329-1_2000x.jpg",
+    "descriptionCourte": "Huile multi-usage anti-frisottis, brillance et toucher soyeux.",
+    "lienAmazon": "https://www.amazon.fr/dp/B011DCMQZA?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "moyen-009",
+    "nom": "Briogeo Don't Despair Repair Deep Conditioning Mask 236ml",
+    "marque": "Briogeo",
+    "categorie": "masque",
+    "prix": 38,
+    "devise": "EUR",
+    "typesCheveux": [
+      "semi-lisses",
+      "ondules",
+      "boucles",
+      "crepus"
+    ],
+    "porosite": [
+      "moyenne",
+      "haute"
+    ],
+    "problemes": [
+      "abimes",
+      "frisottis"
+    ],
+    "objectifs": [
+      "tenue",
+      "texture"
+    ],
+    "budgetCategorie": "moyen",
+    "ingredientsCles": [
+      "huile d'argan",
+      "huile de rose musquée",
+      "biotine"
+    ],
+    "sans": [
+      "sulfates",
+      "silicones",
+      "parabènes"
+    ],
+    "vegan": true,
+    "bio": false,
+    "noteUtilisateurs": 4.5,
+    "nombreAvis": 3400,
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0905/3204/files/s1784636-av-10_600x@2x.jpg",
+    "descriptionCourte": "Masque réparateur profond, idéal cheveux secs et abîmés.",
+    "lienAmazon": "https://www.amazon.fr/dp/B00J4R760C?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "moyen-010",
+    "nom": "Schwarzkopf Professional BC Bonacure Repair Rescue Shampoo 250ml",
+    "marque": "Schwarzkopf Professional",
+    "categorie": "shampooing",
+    "prix": 18.9,
+    "devise": "EUR",
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules",
+      "boucles",
+      "crepus"
+    ],
+    "porosite": [
+      "moyenne",
+      "haute"
+    ],
+    "problemes": [
+      "abimes"
+    ],
+    "objectifs": [
+      "tenue"
+    ],
+    "budgetCategorie": "moyen",
+    "ingredientsCles": [
+      "peptides",
+      "arginine"
+    ],
+    "sans": [
+      "sulfates",
+      "silicones"
+    ],
+    "vegan": false,
+    "bio": false,
+    "noteUtilisateurs": 4.5,
+    "nombreAvis": 2100,
+    "imageUrl": "https://static.thcdn.com/productimg/original/10556620-7345281636291715.jpg",
+    "descriptionCourte": "Shampoing pro reconstituant pour cheveux endommagés, sans sulfates.",
+    "lienAmazon": "https://www.amazon.fr/dp/B07CHGTC9Y?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "moyen-011",
+    "nom": "René Furterer Naturia Shampoing Micellaire Doux 400ml",
+    "marque": "René Furterer",
+    "categorie": "shampooing",
+    "prix": 16.9,
+    "devise": "EUR",
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules",
+      "boucles"
+    ],
+    "porosite": [
+      "faible",
+      "moyenne"
+    ],
+    "problemes": [
+      "aucun"
+    ],
+    "objectifs": [
+      "degraissage"
+    ],
+    "budgetCategorie": "moyen",
+    "ingredientsCles": [
+      "extraits naturels",
+      "essences"
+    ],
+    "sans": [
+      "sulfates",
+      "silicones",
+      "parabènes"
+    ],
+    "vegan": false,
+    "bio": false,
+    "noteUtilisateurs": 4.5,
+    "nombreAvis": 1450,
+    "imageUrl": "https://cdn1.costatic.com/img/product/400/62e7cab5e7ff1/rene-furterer-naturia-p74367.jpg",
+    "descriptionCourte": "Shampoing micellaire ultra-doux usage fréquent, sans sulfates.",
+    "lienAmazon": "https://www.amazon.fr/dp/B07YRZSJ44?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "moyen-012",
+    "nom": "Mizani True Textures Moisture Replenish Shampoo 250ml",
+    "marque": "Mizani",
+    "categorie": "shampooing",
+    "prix": 19.5,
+    "devise": "EUR",
+    "typesCheveux": [
+      "boucles",
+      "crepus"
+    ],
+    "porosite": [
+      "moyenne",
+      "haute"
+    ],
+    "problemes": [
+      "abimes",
+      "frisottis"
+    ],
+    "objectifs": [
+      "texture",
+      "densite"
+    ],
+    "budgetCategorie": "moyen",
+    "ingredientsCles": [
+      "huile de coco",
+      "huile d'olive",
+      "huile de marula"
+    ],
+    "sans": [
+      "sulfates",
+      "silicones",
+      "parabènes"
+    ],
+    "vegan": false,
+    "bio": false,
+    "noteUtilisateurs": 4.5,
+    "nombreAvis": 980,
+    "imageUrl": "https://www.beautycarechoices.com/prod_images/3322/1000/65910.webp",
+    "descriptionCourte": "Shampoing hydratant cheveux crépus et frisés, sans sulfates.",
+    "lienAmazon": "https://www.amazon.fr/dp/B015RJMUIS?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "moyen-013",
+    "nom": "Ouai Wave Spray 150ml",
+    "marque": "Ouai",
+    "categorie": "mousse",
+    "prix": 29.9,
+    "devise": "EUR",
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules"
+    ],
+    "porosite": [
+      "faible",
+      "moyenne"
+    ],
+    "problemes": [
+      "plats"
+    ],
+    "objectifs": [
+      "texture",
+      "volume"
+    ],
+    "budgetCategorie": "moyen",
+    "ingredientsCles": [
+      "huile de coco",
+      "protéine de riz"
+    ],
+    "sans": [
+      "parabènes",
+      "phtalates"
+    ],
+    "vegan": true,
+    "bio": false,
+    "noteUtilisateurs": 4.3,
+    "nombreAvis": 2700,
+    "imageUrl": "https://static.thcdn.com/productimg/original/15862327-1355328970716429.jpg",
+    "descriptionCourte": "Spray texturisant effet plage, volume et matité naturels.",
+    "lienAmazon": "https://www.amazon.fr/dp/B01M6W44Y9?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "moyen-014",
+    "nom": "Bumble and Bumble Surf Spray 125ml",
+    "marque": "Bumble and bumble",
+    "categorie": "mousse",
+    "prix": 28.5,
+    "devise": "EUR",
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules"
+    ],
+    "porosite": [
+      "faible",
+      "moyenne"
+    ],
+    "problemes": [
+      "plats"
+    ],
+    "objectifs": [
+      "texture",
+      "volume"
+    ],
+    "budgetCategorie": "moyen",
+    "ingredientsCles": [
+      "sel marin",
+      "extraits d'algues"
+    ],
+    "sans": [
+      "parabènes"
+    ],
     "vegan": false,
     "bio": false,
     "noteUtilisateurs": 4.3,
-    "nombreAvis": 1120,
-    "imageUrl": "",
-    "descriptionCourte": "Shampooing anti-chute stimulant",
-    "lienAmazon": "https://www.amazon.fr/dp/B004LFE80Q?tag=yugohair-21",
+    "nombreAvis": 1380,
+    "imageUrl": "https://static.thcdn.com/productimg/original/10302655-4475323796353098.jpg",
+    "descriptionCourte": "Spray sel marin pour ondulations beachy, finition matte.",
+    "lienAmazon": "https://www.amazon.fr/dp/B000BIXP5I?tag=yugohair-21",
     "active": true
   }
 ]

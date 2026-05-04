@@ -1,68 +1,510 @@
 [
   {
-    "id": "pre-001",
-    "nom": "Moroccanoil Treatment Original",
-    "marque": "Moroccanoil",
+    "id": "premium-001",
+    "nom": "Olaplex No. 7 Bonding Oil 30ml",
+    "marque": "Olaplex",
     "categorie": "huile",
-    "prix": 35.90,
+    "prix": 42.9,
     "devise": "EUR",
-    "typesCheveux": ["lisses", "ondules", "semi-lisses", "boucles"],
-    "porosite": ["faible", "moyenne"],
-    "problemes": ["secs"],
-    "objectifs": ["brillance", "entretien"],
-    "ingredientsCles": ["huile d'argan", "vitamine E"],
-    "sans": ["parabènes"],
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules",
+      "boucles",
+      "crepus"
+    ],
+    "porosite": [
+      "moyenne",
+      "haute"
+    ],
+    "problemes": [
+      "frisottis",
+      "abimes"
+    ],
+    "objectifs": [
+      "texture"
+    ],
+    "budgetCategorie": "premium",
+    "ingredientsCles": [
+      "bis-aminopropyl diglycol dimaleate",
+      "huiles légères"
+    ],
+    "sans": [
+      "sulfates",
+      "parabènes"
+    ],
     "vegan": true,
     "bio": false,
-    "noteUtilisateurs": 4.8,
-    "nombreAvis": 3200,
-    "imageUrl": "",
-    "descriptionCourte": "Huile d'argan multi-usages pour tous types de cheveux",
-    "lienAmazon": "https://www.amazon.fr/dp/B002Q0FKUE?tag=yugohair-21",
+    "noteUtilisateurs": 4.5,
+    "nombreAvis": 4200,
+    "imageUrl": "https://olaplex.com/cdn/shop/files/1-N7_PDP_product_1440_9f2d8992-27b7-4ba9-9cfe-eca2b7e5dd2f.png",
+    "descriptionCourte": "Huile de finition haute brillance, protection thermique 72h anti-frisottis.",
+    "lienAmazon": "https://www.amazon.fr/dp/B07ZHKTQL3?tag=yugohair-21",
     "active": true
   },
   {
-    "id": "pre-002",
-    "nom": "Kérastase Densifique Bain Densité",
-    "marque": "Kérastase",
-    "categorie": "shampooing",
-    "prix": 29.90,
+    "id": "premium-002",
+    "nom": "Moroccanoil Treatment Original 100ml",
+    "marque": "Moroccanoil",
+    "categorie": "huile",
+    "prix": 48,
     "devise": "EUR",
-    "typesCheveux": ["lisses", "semi-lisses", "ondules"],
-    "porosite": ["faible", "moyenne"],
-    "problemes": ["volume", "chute"],
-    "objectifs": ["fortifier", "croissance"],
-    "ingredientsCles": ["stemoxydine", "acide hyaluronique"],
-    "sans": [],
+    "typesCheveux": [
+      "semi-lisses",
+      "ondules",
+      "boucles",
+      "crepus"
+    ],
+    "porosite": [
+      "moyenne",
+      "haute"
+    ],
+    "problemes": [
+      "frisottis",
+      "abimes"
+    ],
+    "objectifs": [
+      "texture"
+    ],
+    "budgetCategorie": "premium",
+    "ingredientsCles": [
+      "huile d'argan"
+    ],
+    "sans": [
+      "parabènes"
+    ],
     "vegan": false,
     "bio": false,
     "noteUtilisateurs": 4.6,
-    "nombreAvis": 890,
-    "imageUrl": "",
-    "descriptionCourte": "Shampooing densifiant luxe pour cheveux fins",
-    "lienAmazon": "https://www.amazon.fr/dp/B00FLJQRSA?tag=yugohair-21",
+    "nombreAvis": 9800,
+    "imageUrl": "https://www.moroccanoil.com/cdn/shop/files/153_TREATMENT_ORIGINAL_100mL_v3.jpg",
+    "descriptionCourte": "Huile à l'argan multi-usage, démêle, lisse et nourrit en profondeur.",
+    "lienAmazon": "https://www.amazon.fr/dp/B001AO0WCG?tag=yugohair-21",
     "active": true
   },
   {
-    "id": "pre-003",
-    "nom": "Olaplex N°3 Hair Perfector",
-    "marque": "Olaplex",
+    "id": "premium-003",
+    "nom": "Kérastase Nutritive Masquintense Cheveux Épais 200ml",
+    "marque": "Kérastase",
     "categorie": "masque",
-    "prix": 28.00,
+    "prix": 42,
     "devise": "EUR",
-    "typesCheveux": ["lisses", "semi-lisses", "ondules", "boucles", "crepus"],
-    "porosite": ["faible", "moyenne", "haute"],
-    "problemes": ["secs", "chute"],
-    "objectifs": ["fortifier", "brillance"],
-    "ingredientsCles": ["bis-aminopropyl diglycol dimaleate"],
-    "sans": ["sulfates", "parabènes"],
+    "typesCheveux": [
+      "semi-lisses",
+      "ondules",
+      "boucles",
+      "crepus"
+    ],
+    "porosite": [
+      "moyenne",
+      "haute"
+    ],
+    "problemes": [
+      "abimes",
+      "frisottis"
+    ],
+    "objectifs": [
+      "tenue",
+      "texture"
+    ],
+    "budgetCategorie": "premium",
+    "ingredientsCles": [
+      "iris",
+      "gelée royale",
+      "niacinamide"
+    ],
+    "sans": [
+      "parabènes"
+    ],
+    "vegan": false,
+    "bio": false,
+    "noteUtilisateurs": 4.7,
+    "nombreAvis": 2900,
+    "imageUrl": "https://static.thcdn.com/productimg/original/11258175-1835002676870412.jpg",
+    "descriptionCourte": "Masque nutritif intense pour cheveux épais secs, fibre nourrie en profondeur.",
+    "lienAmazon": "https://www.amazon.fr/dp/B01EB5M5V6?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "premium-004",
+    "nom": "Christophe Robin Masque Volume au Sel Marin 250ml",
+    "marque": "Christophe Robin",
+    "categorie": "masque",
+    "prix": 42,
+    "devise": "EUR",
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules"
+    ],
+    "porosite": [
+      "faible",
+      "moyenne"
+    ],
+    "problemes": [
+      "plats",
+      "gras"
+    ],
+    "objectifs": [
+      "volume",
+      "degraissage"
+    ],
+    "budgetCategorie": "premium",
+    "ingredientsCles": [
+      "sel marin",
+      "extraits naturels"
+    ],
+    "sans": [
+      "sulfates",
+      "silicones",
+      "parabènes"
+    ],
+    "vegan": false,
+    "bio": false,
+    "noteUtilisateurs": 4.4,
+    "nombreAvis": 1180,
+    "imageUrl": "https://static.thcdn.com/productimg/1600/1600/11410236-5064679253329907.jpg",
+    "descriptionCourte": "Masque purifiant au sel marin, volume et fraîcheur cuir chevelu.",
+    "lienAmazon": "https://www.amazon.fr/dp/B07BGX5QKL?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "premium-005",
+    "nom": "Aveda Nutriplenish Light Moisture Shampoo 250ml",
+    "marque": "Aveda",
+    "categorie": "shampooing",
+    "prix": 41,
+    "devise": "EUR",
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules"
+    ],
+    "porosite": [
+      "faible",
+      "moyenne"
+    ],
+    "problemes": [
+      "aucun"
+    ],
+    "objectifs": [
+      "texture"
+    ],
+    "budgetCategorie": "premium",
+    "ingredientsCles": [
+      "huile de grenade",
+      "huile de coco",
+      "beurre de mangue"
+    ],
+    "sans": [
+      "sulfates",
+      "parabènes",
+      "silicones"
+    ],
+    "vegan": true,
+    "bio": false,
+    "noteUtilisateurs": 4.5,
+    "nombreAvis": 1240,
+    "imageUrl": "https://static.thcdn.com/productimg/original/12355898-1385330583314811.jpg",
+    "descriptionCourte": "Shampoing hydratation légère 94% d'origine naturelle, cheveux fins à moyens.",
+    "lienAmazon": "https://www.amazon.fr/dp/B082Y76FDJ?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "premium-006",
+    "nom": "Living Proof Perfect Hair Day Shampoo 236ml",
+    "marque": "Living Proof",
+    "categorie": "shampooing",
+    "prix": 36,
+    "devise": "EUR",
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules"
+    ],
+    "porosite": [
+      "faible",
+      "moyenne"
+    ],
+    "problemes": [
+      "plats",
+      "gras"
+    ],
+    "objectifs": [
+      "volume",
+      "degraissage"
+    ],
+    "budgetCategorie": "premium",
+    "ingredientsCles": [
+      "Healthy Hair Molecule (OFPMA)"
+    ],
+    "sans": [
+      "sulfates",
+      "silicones",
+      "parabènes"
+    ],
+    "vegan": true,
+    "bio": false,
+    "noteUtilisateurs": 4.4,
+    "nombreAvis": 980,
+    "imageUrl": "https://www.livingproof.com/cdn/shop/files/PDP-PhDShampoo-FS.png",
+    "descriptionCourte": "Shampoing nettoyant doux toutes textures, brillance et corps naturels.",
+    "lienAmazon": "https://www.amazon.fr/dp/B00I1OTTJK?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "premium-007",
+    "nom": "Maria Nila Structure Repair Masque 250ml",
+    "marque": "Maria Nila",
+    "categorie": "masque",
+    "prix": 41,
+    "devise": "EUR",
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules",
+      "boucles",
+      "crepus"
+    ],
+    "porosite": [
+      "moyenne",
+      "haute"
+    ],
+    "problemes": [
+      "abimes",
+      "frisottis"
+    ],
+    "objectifs": [
+      "tenue",
+      "texture"
+    ],
+    "budgetCategorie": "premium",
+    "ingredientsCles": [
+      "extrait d'algues",
+      "Color Guard Complex"
+    ],
+    "sans": [
+      "sulfates",
+      "parabènes"
+    ],
     "vegan": true,
     "bio": false,
     "noteUtilisateurs": 4.7,
-    "nombreAvis": 5600,
-    "imageUrl": "",
-    "descriptionCourte": "Soin réparateur des liaisons capillaires",
-    "lienAmazon": "https://www.amazon.fr/dp/B00SNM5US4?tag=yugohair-21",
+    "nombreAvis": 860,
+    "imageUrl": "https://marianila.com/cdn/shop/files/3602-opendet_1200x.jpg",
+    "descriptionCourte": "Masque reconstructeur cheveux abîmés ou colorés, 100% vegan.",
+    "lienAmazon": "https://www.amazon.fr/dp/B01KYS32M0?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "premium-008",
+    "nom": "Davines Momo Moisturizing Shampoo 250ml",
+    "marque": "Davines",
+    "categorie": "shampooing",
+    "prix": 28.5,
+    "devise": "EUR",
+    "typesCheveux": [
+      "semi-lisses",
+      "ondules",
+      "boucles",
+      "crepus"
+    ],
+    "porosite": [
+      "moyenne",
+      "haute"
+    ],
+    "problemes": [
+      "abimes",
+      "frisottis"
+    ],
+    "objectifs": [
+      "texture"
+    ],
+    "budgetCategorie": "premium",
+    "ingredientsCles": [
+      "extrait de melon"
+    ],
+    "sans": [
+      "sulfates",
+      "parabènes"
+    ],
+    "vegan": false,
+    "bio": false,
+    "noteUtilisateurs": 4.5,
+    "nombreAvis": 940,
+    "imageUrl": "https://us.davines.com/cdn/shop/files/Davines-70000UCL-MOMO-SH-250ML-8004608299967-1_2000x.jpg",
+    "descriptionCourte": "Shampoing hydratant intense pour cheveux secs et déshydratés.",
+    "lienAmazon": "https://www.amazon.fr/dp/B001ARP2LY?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "premium-009",
+    "nom": "Pattern Beauty Leave-In Conditioner 290ml",
+    "marque": "Pattern Beauty",
+    "categorie": "leave-in",
+    "prix": 42,
+    "devise": "EUR",
+    "typesCheveux": [
+      "boucles",
+      "crepus"
+    ],
+    "porosite": [
+      "haute"
+    ],
+    "problemes": [
+      "abimes",
+      "frisottis"
+    ],
+    "objectifs": [
+      "texture",
+      "densite"
+    ],
+    "budgetCategorie": "premium",
+    "ingredientsCles": [
+      "8 huiles",
+      "aloe vera",
+      "miel"
+    ],
+    "sans": [
+      "sulfates",
+      "silicones",
+      "parabènes"
+    ],
+    "vegan": false,
+    "bio": false,
+    "noteUtilisateurs": 4.6,
+    "nombreAvis": 540,
+    "imageUrl": "https://static.thcdn.com/productimg/original/13952195-1064988157378510.jpg",
+    "descriptionCourte": "Leave-in riche pour cheveux bouclés à crépus, hydratation profonde.",
+    "lienAmazon": "https://patternbeauty.com/products/leave-in-conditioner",
+    "active": true
+  },
+  {
+    "id": "premium-010",
+    "nom": "Innersense Hydrating Cream Conditioner 295ml",
+    "marque": "Innersense Organic Beauty",
+    "categorie": "apres-shampooing",
+    "prix": 44,
+    "devise": "EUR",
+    "typesCheveux": [
+      "semi-lisses",
+      "ondules",
+      "boucles",
+      "crepus"
+    ],
+    "porosite": [
+      "moyenne",
+      "haute"
+    ],
+    "problemes": [
+      "abimes",
+      "frisottis"
+    ],
+    "objectifs": [
+      "texture"
+    ],
+    "budgetCategorie": "premium",
+    "ingredientsCles": [
+      "huile d'avocat bio",
+      "beurre de karité bio",
+      "tamanu"
+    ],
+    "sans": [
+      "sulfates",
+      "silicones",
+      "parabènes"
+    ],
+    "vegan": true,
+    "bio": true,
+    "noteUtilisateurs": 4.6,
+    "nombreAvis": 380,
+    "imageUrl": "https://innersensebeauty.com/cdn/shop/files/HydratingCreamConditionerRetail_1.jpg",
+    "descriptionCourte": "Après-shampoing crème bio non-toxique, hydratation pour cheveux denses.",
+    "lienAmazon": "https://innersensebeauty.com/products/hydrating-cream-conditioner",
+    "active": true
+  },
+  {
+    "id": "premium-011",
+    "nom": "Kérastase Densifique Bain Densité Shampoo 250ml",
+    "marque": "Kérastase",
+    "categorie": "shampooing",
+    "prix": 32.5,
+    "devise": "EUR",
+    "typesCheveux": [
+      "lisses",
+      "semi-lisses",
+      "ondules"
+    ],
+    "porosite": [
+      "faible",
+      "moyenne"
+    ],
+    "problemes": [
+      "densite",
+      "plats"
+    ],
+    "objectifs": [
+      "densite",
+      "volume"
+    ],
+    "budgetCategorie": "premium",
+    "ingredientsCles": [
+      "stémoxydine",
+      "hyaluronique",
+      "ceramide"
+    ],
+    "sans": [
+      "parabènes"
+    ],
+    "vegan": false,
+    "bio": false,
+    "noteUtilisateurs": 4.5,
+    "nombreAvis": 1620,
+    "imageUrl": "https://static.thcdn.com/productimg/original/10951811-3765281580340810.jpg",
+    "descriptionCourte": "Shampoing densifiant cheveux clairsemés, fibre redensifiée.",
+    "lienAmazon": "https://www.amazon.fr/dp/B00DL9PR8I?tag=yugohair-21",
+    "active": true
+  },
+  {
+    "id": "premium-012",
+    "nom": "Maria Nila True Soft Argan Oil 100ml",
+    "marque": "Maria Nila",
+    "categorie": "huile",
+    "prix": 41,
+    "devise": "EUR",
+    "typesCheveux": [
+      "semi-lisses",
+      "ondules",
+      "boucles",
+      "crepus"
+    ],
+    "porosite": [
+      "moyenne",
+      "haute"
+    ],
+    "problemes": [
+      "frisottis",
+      "abimes"
+    ],
+    "objectifs": [
+      "texture"
+    ],
+    "budgetCategorie": "premium",
+    "ingredientsCles": [
+      "huile d'argan",
+      "Color Guard Complex"
+    ],
+    "sans": [
+      "sulfates",
+      "parabènes"
+    ],
+    "vegan": true,
+    "bio": false,
+    "noteUtilisateurs": 4.6,
+    "nombreAvis": 720,
+    "imageUrl": "https://marianila.com/cdn/shop/files/IMG_c_s_3637_soft_argan_oil_100_ml_720x.jpg",
+    "descriptionCourte": "Huile d'argan nourrissante anti-frisottis, 100% vegan.",
+    "lienAmazon": "https://www.amazon.fr/dp/B00TU2HRXM?tag=yugohair-21",
     "active": true
   }
 ]
